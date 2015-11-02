@@ -1,7 +1,14 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+November 1 - Notes
+
+- Put in place add venue and act functionality to home page. Unable to see all of the venues when go to Venues Index page. 
+
+-Check in with someone on why logo isn't showing up 
+
+-Ask best way to approach USER/ADMIN login situation 
+
+-Ask about what would be the best way to approach CREATION OF EVENTS 
 
 Things you may want to cover:
 
