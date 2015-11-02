@@ -250,7 +250,26 @@
         null
       ],
       "/Users/jessicajoly/Desktop/event_app/spec/features/venue_pages_spec.rb": [
-
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ],
       "/Users/jessicajoly/Desktop/event_app/spec/models/act_spec.rb": [
         1,
@@ -311,8 +330,8 @@
       "/Users/jessicajoly/Desktop/event_app/app/controllers/home_controller.rb": [
         1,
         1,
-        2,
-        2,
+        3,
+        3,
         null,
         null
       ],
@@ -334,7 +353,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -357,8 +376,42 @@
         null,
         null,
         null
+      ],
+      "/Users/jessicajoly/Desktop/event_app/app/controllers/venues_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        2,
+        2,
+        1,
+        2,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1446435195
+    "timestamp": 1446435397
   }
 }
