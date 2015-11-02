@@ -1,9 +1,6 @@
 <div class="jumbotron main-jumbotron">
-  <div class="row catch-line-container">
-    <h1 class="catch-line"> Portland Pop! </h1>
-  </div>
+ <a href="/"><img class="main-logo" src="logo.png"></a>
 </div>
-
 
 <div class="container">
 <ul>
@@ -18,8 +15,23 @@
 </ul>
 </div>
 
+<div class="container">
+<ul>
+  <% @venues.each do |venue| %>
+    <li>
+    <br>
+      <div class="act-display">
+        <%= link_to venue.name, venue_path(venue) %>
+      </div>
+     </li>
+  <% end %>
+</ul>
+</div>
+
+
  <div class="container">
   	<%=link_to "Add an Act", new_act_path, id: "new_act_link",  remote: true %>
+  	<%=link_to "Add a Venue", new_venue_path, id: "new_venue_link", remote: true %>
  </div>
 
 

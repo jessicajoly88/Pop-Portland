@@ -3,6 +3,14 @@ class ActsController < ApplicationController
   	@act = Act.new
   end 
 
+  def show 
+  	@act = Act.find(params[:id])
+  end 
+
+  def index
+    @acts = Act.all
+  end 
+
   def create 
   	@act = Act.new(act_params)
   	  if @act.save 
@@ -15,10 +23,7 @@ class ActsController < ApplicationController
   	  end
   end 
 
-  def show 
-  	@act = Act.find(params[:id])
-  end 
-
+ 
 
 private
   def act_params

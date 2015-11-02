@@ -77,7 +77,6 @@ body.nav-expanded {
 }
 
 #nav-close {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 300;
   font-size: 24px;
   padding-right: 10px;
@@ -165,25 +164,21 @@ body.nav-expanded {
 
 
 .main-jumbotron {
-background-image: url("jumbotron.jpg");
+  background-image: url("jumbotron.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  text-align: center;
   margin-left:-5%;
   padding :0px;
-  min-height: 400px;
+  min-height: 900px;
   width: 110% !important;
   margin-top: -12%;
 
-    .catch-line-container {
-      margin-top: 8% !important;
-     padding-top: 10%;
-    }
+}
 
-    .row {
-    margin: 0 auto;
-    text-align: center;
-    }
+ .main-logo {
+  padding: 50px;
 }
 
 li {

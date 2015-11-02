@@ -1,0 +1,12 @@
+<div class="container">
+<ul>
+  <% @venues.each do |venue| %>
+    <li>
+    <br>
+      <div class="act-display">
+        <%= link_to venue.name, venue_path(venue) %>
+      </div>
+     </li>
+  <% end %>
+</ul>
+</div>
