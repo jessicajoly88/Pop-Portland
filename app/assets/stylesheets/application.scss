@@ -171,7 +171,7 @@ background-image: url("jumbotron.jpg");
   background-size: cover;
   margin-left:-5%;
   padding :0px;
-  min-height: 600px;
+  min-height: 400px;
   width: 110% !important;
   margin-top: -12%;
 
@@ -186,3 +186,40 @@ background-image: url("jumbotron.jpg");
     }
 }
 
+li {
+  list-style-type: none;
+}
+
+.act-display {
+  font-size: 1.8em;
+}
+
+.act-header {
+  margin-top:4rem;
+  font-size: 3em;
+  color:black;
+  font-weight: 400;
+  text-align:center;
+}
+
+.act-description {
+  max-width:85%;
+  margin-left:6%;
+  font-size:1.2em;
+}
+
+.act-details {
+  font-size: 1.0em;
+  font-weight:300;
+  max-width:85%;
+  margin-left:6%;
+}
+
+.act-image-wrapper {
+   text-align: center;
+}
+
+.act-image-big {
+   border-radius: 5px;
+   margin: 5px;
+}

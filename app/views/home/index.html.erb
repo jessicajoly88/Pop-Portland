@@ -1,3 +1,31 @@
+<div class="jumbotron main-jumbotron">
+  <div class="row catch-line-container">
+    <h1 class="catch-line"> Portland Pop! </h1>
+  </div>
+</div>
 
 
-<%=link_to "Add an Act", new_act_path, id: "new_act_link", class: "btn btn-success", remote: true %>
+<div class="container">
+<ul>
+  <% @acts.each do |act| %>
+    <li>
+    <br>
+      <div class="act-display">
+        <%= link_to act.name, act_path(act) %>
+      </div>
+     </li>
+  <% end %>
+</ul>
+</div>
+
+ <div class="container">
+  	<%=link_to "Add an Act", new_act_path, id: "new_act_link",  remote: true %>
+ </div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<div class="col-md-10 col-md-offset-1">
+  <div class="act-header">
+     <%= @act.name %>
+   </div>
+   <br>
+   <div class="act-description">
+     <%= @act.description %>
+  </div>
+   <div class="act-details">
+     <li>Genre: <%= @act.genre %></li>
+     <li><%=link_to "Website",  @act.website %></li>
+   </div>
+   <p class="act-image-wrapper">
+      <img class="act-image-big" src=<%= @act.image %>>
+   </p>
+</div>
