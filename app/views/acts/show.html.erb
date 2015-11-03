@@ -13,6 +13,7 @@
      <li><%=link_to "Website",  @act.website %></li>
    </div>
    <p class="act-image-wrapper">
-      <img class="act-image-big" src=<%= @act.image %>>
+      <img class="act-image-big" src=<%= @act.image %>
    </p>
+   <%= @act.songs.first.html.html_safe %>
 </div>
