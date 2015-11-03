@@ -13,6 +13,9 @@ act_list = [
 
   ["Júníus Meyvant","Icelandic Folk","Júníus Meyvant is the artist name of Vestmann Islands born singer-songwriter Unnar Gísli Sigurmundsson. As a young boy he was an eccentric to a small degree and he only loved two things, skateboarding and painting. Every now and then he asked the Muses if he should learn to play an instrument but his wild and free behavior terminated his dreams as he was quickly suspended from music school. All through his teens he rambled on without even considering becoming a musician or even playing any instruments. In his early twenties Unnar stumbled upon a beat up guitar at his parents’ house and started noodling around. By playing the guitar he managed to tame his inner beast and his sense for songs and melodies burst like rockets. The uncontrollable urge for writing music and constant flow of ideas kept him tossing and turning every night and day forever and a day. For a while he filtered his ideas through a band that didn’t live up to his creative requirements so he decided to undertake his alter ego Júníus Meyvant. The sound of Júníus Meyvant is a rich and afflicted take on freaky folk pop with a familiar and soulful feel. The feeling you get from listening to Júníus is equally as comfortable as resting under a thick wool blanket with a hot cup of cocoa or even when one settles with an exotic beverage on a hot sandy beach far and away.", "http://www.juniusmeyvant.com/","http://icelandairwaves.is/artist-data/fullsize/362509.jpg","https://soundcloud.com/recordrecords/junius-meyvant-color-decay"]
 
+  ["Kiasmos", "Electronic", "Kiasmos is made up of Icelandic BAFTA-winning composer Ólafur Arnalds, known for his unique blend of minimal piano and string compositions with electronic sounds, and Janus Rasmussen from the Faroe Islands, known as the mastermind of the electro-pop outfit Bloodgroup. Based in Reykjavík, Arnalds used to work as a sound engineer, often for Rasmussen's other projects, where the two musicians discovered their common love for minimal, experimental music. They eventually became best friends, often hanging out in their studio, exploring electronic sounds. After dropping several tracks and performing at select festivals throughout the years, Ólafur Arnalds and Janus Rasmussen are now dedicating their time to exploring the area in-between Ólafur’s more acoustic, piano-based solo work and Janus’s synth-heavy electro pop, with their collaborative electronic project Kiasmos.","http://www.erasedtapes.com/artists/biography/11/kiasmos", "http://icelandairwaves.is/artist-data/fullsize/395238.jpg", "https://soundcloud.com/erasedtapes/kiasmos-bent" ]
+
+
 ]
 
 act_list.each do |name, genre, description, website, image, url|
@@ -22,41 +25,51 @@ end
 
 venue_list = [
 
-  ["McMenamins Crystal Ballroom", "1332 W Burnside St, Portland, OR 97209", "Spring-loaded dance floor adds bounce to concert venue & club with tall windows & house-brewed beer."],
+0  ["McMenamins Crystal Ballroom", "1332 W Burnside St, Portland, OR 97209", "Spring-loaded dance floor adds bounce to concert venue & club with tall windows & house-brewed beer."],
 
-  ["Mississippi Studios and Bar Bar","3939 N Mississippi Ave, Portland, OR 97227","A renovated church houses this intimate live music spot with burgers & drinks in the adjoining bar."],
+1  ["Mississippi Studios and Bar Bar","3939 N Mississippi Ave, Portland, OR 97227","A renovated church houses this intimate live music spot with burgers & drinks in the adjoining bar."],
 
-  ["Valentine's","232 SW Ankeny St, Portland, OR 97204","Petite 2-level bar with a bohemian vibe & outdoor seating offering live music, DJs & art shows."],
+2  ["Valentine's","232 SW Ankeny St, Portland, OR 97204","Petite 2-level bar with a bohemian vibe & outdoor seating offering live music, DJs & art shows."],
 
-  ["Roseland Theater","8 NW 6th Ave, Portland, OR 97209", "Cozy, mostly standing-room-only concert hall with a storied history & cash-only tickets & drinks."],
+3  ["Roseland Theater","8 NW 6th Ave, Portland, OR 97209", "Cozy, mostly standing-room-only concert hall with a storied history & cash-only tickets & drinks."],
 
-  ["Doug Fir Restaurant and Lounge", "830 E Burnside St, Portland, OR 97214","Spot with futuristic log-cabin decor hosting indie music shows, with an eclectic diner menu & bar"],
+4  ["Doug Fir Restaurant and Lounge", "830 E Burnside St, Portland, OR 97214","Spot with futuristic log-cabin decor hosting indie music shows, with an eclectic diner menu & bar"],
 
-  ["Aladdin Theater","3017 SE Milwaukie Ave, Portland, OR 97202", "1920s former movie house now presents live music & comedy shows in a cozy auditorium."],
+5  ["Aladdin Theater","3017 SE Milwaukie Ave, Portland, OR 97202", "1920s former movie house now presents live music & comedy shows in a cozy auditorium."],
 
-  ["Wonder Ballroom","128 NE Russell St, Portland, OR 97212", "Live-music venue in a historic former church featuring some balcony seats & a lounge with nibbles."],
+6  ["Wonder Ballroom","128 NE Russell St, Portland, OR 97212", "Live-music venue in a historic former church featuring some balcony seats & a lounge with nibbles."],
 
-  ["Alberta Rose Theatre","3000 NE Alberta St, Portland, OR 97211","Renovated movie house from the 1920s presents live music, comedy & vaudeville in an intimate space."],
+7  ["Alberta Rose Theatre","3000 NE Alberta St, Portland, OR 97211","Renovated movie house from the 1920s presents live music, comedy & vaudeville in an intimate space."],
 
-  ["Goodfoot Pub & Lounge","2845 SE Stark St, Portland, OR 97214","Upstairs pub offers pool, pinball, bar food & beers on tap, while basement hosts live acts & DJs."],
+8  ["Goodfoot Pub & Lounge","2845 SE Stark St, Portland, OR 97214","Upstairs pub offers pool, pinball, bar food & beers on tap, while basement hosts live acts & DJs."],
 
-  ["Arlene Schnitzer Concert Hall","1037 SW Broadway, Portland, OR 97205", "Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building."]
+9  ["Arlene Schnitzer Concert Hall","1037 SW Broadway, Portland, OR 97205", "Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building."]
 ]
 
 venue_list.each do |name, address, description|
   Venue.create(name: name, address: address, description: description)
 end
 
+# "act_id","venue_id","time_period","date"
 
+event_list = [
 
-#
-#
-# # event_list = [
-# #
-# #   ["5pm-7pm","September 16, 2015", 4, 6]
-# #
-# # ]
-# #
-# # # event_list.each do |time_period, date, venue_id, act_id|
-# # #   Event.create(time_period: time_period, date: date, venue_id: venue_id, act_id: act_id)
-# # # end
+  [0,0,"7pm - 11pm","September 16, 2015"],
+
+  [1,9,"9pm - 12am","September 17, 2015"],
+
+  [2,4, "8pm - 12am","September 18, 2015"],
+
+  [3,8, "8pm - 11pm","September 17, 2015"],
+
+  [4,1, "8pm - 1am","September 18, 2-15"],
+
+  [5,7, "7:30 - 10pm","September 17, 2015"],
+
+  [6,5, "9pm - 2am","September 19, 2015"]
+
+]
+
+event_list.each do |time_period, date, act_id, venue_id|
+  Event.create(time_period: time_period, date: date, venue_id: venue_id, act_id: act_id)
+end
