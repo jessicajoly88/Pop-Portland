@@ -13,6 +13,7 @@ gem "font-awesome-rails"
 gem 'mini_magick'
 gem 'devise'
 gem 'selenium-webdriver'
+gem 'rest-client'
 
 group :development do
   gem 'byebug'
