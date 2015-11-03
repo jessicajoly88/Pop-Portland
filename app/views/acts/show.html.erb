@@ -1,10 +1,21 @@
 <br>
 <br>
+
+<h1><% @act.events.each do |event|%>
+<ul>
+  <%= event.date %>
+  <%= event.venue.name %>
+  <%= event.venue.address %>
+  <%= event.time_period %>
+</ul>
+<% end %>
+</h1>
+
 <div class="col-md-10 col-md-offset-1">
   <div class="act-header">
      <%= @act.name %>
-   </div>
    <br>
+  </div>
    <div class="act-description">
      <%= @act.description %>
   </div>
