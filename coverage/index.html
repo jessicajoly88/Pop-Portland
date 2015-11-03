@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-11-03T10:40:12-08:00">2015-11-03T10:40:12-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-11-03T12:52:45-08:00">2015-11-03T12:52:45-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.89%</span></span>
+    (<span class="covered_percent"><span class="green">97.3%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.16
+         1.13
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>30</b> files in total.
-    <b>180</b> relevant lines. 
-    <span class="green"><b>178</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>31</b> files in total.
+    <b>185</b> relevant lines. 
+    <span class="green"><b>180</b> lines covered</span> and
+    <span class="red"><b>5</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -103,9 +103,9 @@
       <tr>
         <td class="strong"><a href="#14f654b2a6c872780afc7a9f09dd49ed2a264c4b" class="src_link" title="app/models/act.rb">app/models/act.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>9</td>
         <td>8</td>
-        <td>7</td>
-        <td>7</td>
+        <td>8</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -122,12 +122,12 @@
       
       <tr>
         <td class="strong"><a href="#841a48e531d93ed524f84601d4e52a37e6349bc1" class="src_link" title="app/models/song.rb">app/models/song.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>4</td>
-        <td>4</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">66.67 %</td>
+        <td>14</td>
+        <td>9</td>
+        <td>6</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -323,11 +323,11 @@
       <tr>
         <td class="strong"><a href="#53919b1542f1999fbf05ffb31103c2a8254a15cf" class="src_link" title="spec/models/song_spec.rb">spec/models/song_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>5</td>
-        <td>5</td>
+        <td>12</td>
+        <td>4</td>
+        <td>4</td>
         <td>0</td>
-        <td>1.6</td>
+        <td>1.5</td>
       </tr>
       
       <tr>
@@ -348,6 +348,16 @@
         <td>15</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#2414ea788d2380a50f5724bb98618692ce1b0dd3" class="src_link" title="spec/song_spec.rb">spec/song_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
       </tr>
       
     </tbody>
@@ -929,8 +939,8 @@
     <h3>app/models/act.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -965,22 +975,28 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :name, :presence =&gt; true</code>
+          <code class="ruby">  accepts_nested_attributes_for :songs</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :genre, :presence =&gt; true</code>
+          <code class="ruby">  validates :name, :presence =&gt; true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
+          <code class="ruby">  validates :genre, :presence =&gt; true</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
           <code class="ruby">  validates :description, :presence =&gt; true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
@@ -1047,11 +1063,11 @@
         <div class="source_table" id="841a48e531d93ed524f84601d4e52a37e6349bc1">
   <div class="header">
     <h3>app/models/song.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">66.67 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1067,22 +1083,76 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  belongs_to :act</code>
+          <code class="ruby">  before_create :get_html</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :url, :presence =&gt; true</code>
+          <code class="ruby">  belongs_to :act</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :html, :presence =&gt; true</code>
+          <code class="ruby">  validates :url, :presence =&gt; true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def get_html</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    request = RestClient.get &#39;http://soundcloud.com/oembed&#39;, :params =&gt; { :url =&gt; url, :format =&gt; &#39;json&#39; }</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    request = JSON.parse(request)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    # Need to call self on html so that it attributes html that you&#39;re fetching to the song.</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
+          
+          <code class="ruby">    self.html = request[&#39;html&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>
@@ -2843,8 +2913,8 @@
     <h3>spec/models/song_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>4</b> relevant lines. 
+      <span class="green"><b>4</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2882,13 +2952,43 @@
           <code class="ruby">  it {should validate_presence_of :url}</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">  it {should validate_presence_of :html}</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  # it &quot;doesn&#39;t save the song if SoundCloud gives an error&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  #   song = Song.new(:url =&gt; &#39;www.https://soundcloud.com/record/junius-meyvant-color-&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  #   song.save.should be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
@@ -3109,6 +3209,24 @@
           
           <code class="ruby">end</code>
         </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="2414ea788d2380a50f5724bb98618692ce1b0dd3">
+  <div class="header">
+    <h3>spec/song_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
       
     </ol>
   </pre>

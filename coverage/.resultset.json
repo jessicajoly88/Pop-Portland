@@ -291,6 +291,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/event_app/spec/models/event_spec.rb": [
@@ -317,7 +318,12 @@
         1,
         2,
         2,
-        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/event_app/app/models/song.rb": [
@@ -325,6 +331,15 @@
         1,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
         null
       ],
       "/Users/Guest/Desktop/event_app/spec/models/venue_spec.rb": [
@@ -344,6 +359,9 @@
         1,
         1,
         null
+      ],
+      "/Users/Guest/Desktop/event_app/spec/song_spec.rb": [
+
       ],
       "/Users/Guest/Desktop/event_app/app/controllers/home_controller.rb": [
         1,
@@ -430,6 +448,6 @@
         null
       ]
     },
-    "timestamp": 1446576012
+    "timestamp": 1446583965
   }
 }
