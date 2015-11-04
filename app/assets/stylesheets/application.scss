@@ -164,22 +164,22 @@ body.nav-expanded {
 
 
 .main-jumbotron {
-  background-image: url("jumbotron.jpg");
+  background-image:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("jumbotron.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   text-align: center;
   margin-left:-5%;
   padding :0px;
-  min-height: 900px;
+  height: 700px;
   width: 110% !important;
   margin-top: -12%;
-
 }
 
  .main-logo {
   padding: 200px;
 }
+
 
 li {
   list-style-type: none;
