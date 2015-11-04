@@ -10,11 +10,12 @@ gem 'sass-rails', '>= 3.2'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem "font-awesome-rails"
-gem 'mini_magick'
 gem 'devise'
 gem 'selenium-webdriver'
 gem 'rest-client'
 gem 'jquery-turbolinks'
+gem 'geocoder'
+
 
 group :development do
   gem 'byebug'
