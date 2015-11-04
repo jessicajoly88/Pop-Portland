@@ -1,15 +1,4 @@
-<br>
-<br>
 
-<h1><% @act.events.each do |event|%>
-<ul>
-  <%= event.date %>
-  <%= event.venue.name %>
-  <%= event.venue.address %>
-  <%= event.time_period %>
-</ul>
-<% end %>
-</h1>
 
 <div class="col-md-10 col-md-offset-1">
   <div class="act-header">
@@ -26,5 +15,19 @@
    <p class="act-image-wrapper">
       <img class="act-image-big" src=<%= @act.image %>
    </p>
-   <%= @act.songs.first.html.html_safe %>
+
+
+   <% @act.events.each do |event|%>
+   <h1><%= event.date %></h1>
+   <ul>
+     <li> <%= event.time_period %></li>
+     <li><%= event.venue.name %></li>
+     <li><%= event.venue.address %></li>
+
+   </ul>
+   <% end %>
+
+
 </div>
+
+<%= @act.songs.first.html.html_safe %>
