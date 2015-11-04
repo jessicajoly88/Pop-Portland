@@ -14,6 +14,7 @@ gem 'mini_magick'
 gem 'devise'
 gem 'selenium-webdriver'
 gem 'rest-client'
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'byebug'
