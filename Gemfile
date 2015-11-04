@@ -15,6 +15,7 @@ gem 'selenium-webdriver'
 gem 'rest-client'
 gem 'jquery-turbolinks'
 gem 'geocoder'
+gem 'gmaps4rails'
 
 
 group :development do
