@@ -23,13 +23,12 @@
    <ul>
      <li> <%= event.time_period %></li>
      <li><%= event.venue.name %></li>
-     <li><%= link_to "Locate", venue_path(event.venue) %>
- </li>
+     <li><%= link_to "Locate", venue_path(event.venue) %></li>
    </ul>
    <% end %>
 </div>
 <br>
 <br>
 
-  <%= @act.songs.first.html.html_safe %>
 </div>
+<%= @act.songs.first.html.html_safe %>

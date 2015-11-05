@@ -42,7 +42,9 @@ venue_list = [
 
    ["Goodfoot Pub & Lounge","2845 SE Stark St, Portland, OR 97214","Upstairs pub offers pool, pinball, bar food & beers on tap, while basement hosts live acts & DJs."],
 
-   ["Arlene Schnitzer Concert Hall","1037 SW Broadway, Portland, OR 97205", "Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building."]
+   ["Arlene Schnitzer Concert Hall","1037 SW Broadway, Portland, OR 97205", "Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building."],
+
+   ["Holocene","1001 SE Morrison St, Portland, OR 97214", "2-level nightclub & bar in former auto warehouse featuring live bands, eclectic DJs & techno music."]
 
 ]
 
@@ -62,11 +64,16 @@ event_list = [
 
   [3,8, "8pm - 11pm","September 17, 2015"],
 
-  [4,1, "8pm - 1am","September 18, 2-15"],
+  [4,1, "8pm - 1am","September 18, 2015"],
+
+  [4,10, "8pm - 1am","September 19, 2015"],
 
   [5,7, "7:30 - 10pm","September 17, 2015"],
 
-  [6,5, "9pm - 2am","September 19, 2015"]
+  [6,5, "9pm - 2am","September 19, 2015"],
+
+  [7,10, "9pm - 2am","September 19, 2015"],
+
 
 ]
 

@@ -208,8 +208,8 @@ body.nav-expanded {
   max-height: 90%;
   max-width: 90%;
   position: absolute;
-  top: 0;
-  bottom: 700px;
+  top: 50px;
+  bottom: 799px;
   left: 0;
   right: 0;
   margin: auto;
@@ -254,4 +254,11 @@ li {
 .act-image-big {
    border-radius: 5px;
    margin: 5px;
+}
+
+#map {
+  width: 975px;
+  height: 500px;
+  margin-top:50rem;
+  text-align:center;
 }

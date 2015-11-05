@@ -1,11 +1,13 @@
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
+//= require gmaps/google
 //= require turbolinks
 //= require underscore
-//= require gmaps/google
-//= require jquery.turbolinks
+
 //= require_tree .
 
+// JavaScript for Menu in NavBar
 $(document).ready(function(){
 
     //Navigation Menu Slider
