@@ -7,9 +7,14 @@ class VenuesController < ApplicationController
     @venue = Venue.new
   end
 
-  def show 
+  def show
   	@venue = Venue.find(params[:id])
-  end 
+    # @location = Gmaps4rails.build_markers(@venue) do |marker|
+    #   marker.lat =  @venue.latitude
+    #   marker.lng =  @venue.longitude
+    # end
+    # binding.pry
+  end
 
   def create
   	@venue = Venue.new(venue_params)
@@ -21,7 +26,7 @@ class VenuesController < ApplicationController
   	  else
   	  	render :new
   	  end
-  end 
+  end
 
 private
   def venue_params

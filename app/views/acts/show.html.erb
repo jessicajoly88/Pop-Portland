@@ -23,7 +23,8 @@
    <ul>
      <li> <%= event.time_period %></li>
      <li><%= event.venue.name %></li>
-     <li><%= event.venue.address %></li>
+     <li><%= link_to "Locate", venue_path(event.venue) %>
+ </li>
    </ul>
    <% end %>
 </div>
