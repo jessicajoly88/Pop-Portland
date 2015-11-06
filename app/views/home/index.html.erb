@@ -2,14 +2,14 @@
  <a href="/"><img class="main-logo img-responsive" src="/assets/logo.png"></a>
 </div>
 
-<div class="jumbotron aftermain-jumbotron">
+<div class="container">
   <% @acts.each do |act| %>
     <div class="col-md-4 col-sm-6 col-xs-12">
-      <div class="act-display-name">
-        <%= link_to act.name, act_path(act) %>
-      </div>
       <div class="img-div">
         <%= link_to image_tag(act.image, class: "img-circle" ), act_path(act) %>
+      <div class="act-display-name">
+        <%= link_to act.name, act_path(act), class: "act-text-display" %>
+      </div>
       </div>
     </div>
   <% end %>

@@ -2,6 +2,10 @@
 <script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js" type="text/javascript"></script>
 
 <div class="col-md-10 col-md-offset-1">
+<h1><%=@venue.name%></h1>
+<%=@venue.description%>
+
+
   <div class="container">
     <div id="map"</div>
   </div>
@@ -9,9 +13,13 @@
 
 <h1> Events at this venue:</h1>
 <% @venue.events.each do |event| %>
-  <%=event.act.name %>
+<ul>
+  <li><%=link_to event.act.name, act_path(event.act) %></li>
+  <li><%=event.time_period %></li>
+  <li><%=event.date%></li>
+</ul>
 <% end %>
-
+</div>
 
 <script type="text/javascript">
 handler = Gmaps.build('Google');

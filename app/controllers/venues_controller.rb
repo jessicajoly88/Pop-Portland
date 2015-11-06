@@ -8,7 +8,6 @@ class VenuesController < ApplicationController
   end
 
   def show
-    @events = Event.all
   	@venue = Venue.find(params[:id])
     # @location = Gmaps4rails.build_markers(@venue) do |marker|
     #   marker.lat =  @venue.latitude
