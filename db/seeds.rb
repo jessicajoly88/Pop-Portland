@@ -21,7 +21,10 @@ act_list = [
 
   ["Weaves", "Pop","Having only released one EP and playing live as a band for little over a year, Weaves have quickly become an internationally buzzed about band. They were recently chosen as Rolling Stone’s “Band To Watch”, and have shared the stage with Constantines, Tune-Yards and Austra, playing such venues as Massey Hall and The Phoenix. Having been tagged as pop eclectics, seductive art-rockers and musicians with a delirious swirl, Weaves make bent-out-of-shape pop music that’s catchy and unpredictable. Their critically acclaimed debut EP was produced by Dave Newfeld (Broken Social Scene, Super Furry Animals) and Leon Taheny (Owen Pallett, Fucked Up). Formed by lead singer Jasmyn Burke and guitarist Morgan Waters, Weaves is a violent collision of soul, punk and pop. The tension between Burke’s affinity for topsy-turvy tunes and Waters’ ear for buoyant pop hooks makes for music that revels in fun, arty, noisy weirdness yet still maintain a level of accessibility. With the addition of a virtuosic rhythm section made up of Spencer Cole and Zach Bines, and you’ve got a band that’s slick yet slimy, backwards yet forward thinking, perhaps on the tip of collapsing.","http://www.weavesband.com/", "http://icelandairwaves.is/artist-data/fullsize/353560.jpg","https://soundcloud.com/buzzrecords/weaves-shithole" ],
 
-  ["Perfume Genius", "Baroque Pop", "Over the course of two astonishing albums, Perfume Genius, aka Seattle native Mike Hadreas, cemented his place as a singer-songwriter of rare frankness, creating songs that, while achingly emotional, offered empathy and hope, rather than any judgment or handwringing. Sparse, gorgeous and with Hadreas’ quavering vocals often only accompanied by piano, they were uncommonly beautiful tales of a life lived on the dark side – scarred, brutalised, yet ultimately, slowly but surely reclaimed. “Too Bright”, however, is something else altogether. Less self-conscious, and less concerned with storytelling and easily-digested melodies, it is a brave,bold,unpredictably quixotic exploration of what Hadreas calls “an underlying rage that has slowly been growing since ten and has just begun to bubble up.", "http://perfumegenius.net/#", "http://icelandairwaves.is/artist-data/fullsize/352645.jpg","https://soundcloud.com/mylungz/perfume-genius-queen"]
+  ["Perfume Genius", "Baroque Pop", "Over the course of two astonishing albums, Perfume Genius, aka Seattle native Mike Hadreas, cemented his place as a singer-songwriter of rare frankness, creating songs that, while achingly emotional, offered empathy and hope, rather than any judgment or handwringing. Sparse, gorgeous and with Hadreas’ quavering vocals often only accompanied by piano, they were uncommonly beautiful tales of a life lived on the dark side – scarred, brutalised, yet ultimately, slowly but surely reclaimed. “Too Bright”, however, is something else altogether. Less self-conscious, and less concerned with storytelling and easily-digested melodies, it is a brave,bold,unpredictably quixotic exploration of what Hadreas calls “an underlying rage that has slowly been growing since ten and has just begun to bubble up.", "http://perfumegenius.net/#", "http://icelandairwaves.is/artist-data/fullsize/352645.jpg","https://soundcloud.com/mylungz/perfume-genius-queen"],
+
+  ["Oyama", "Shoegaze", "Oyama are a young Icelandic five­ piece, making dreamy shoegaze influenced noise­ rock. Their compelling songs are built on multi­layered guitars that shimmer and roar, and sweetly discordant vocal harmonies that echo around the mind long after the song is over.", "http://oyamayo.tumblr.com/", "http://icelandairwaves.is/artist-data/fullsize/393068.jpg","https://soundcloud.com/oyamaband"]
+
 
 ]
 
@@ -88,7 +91,9 @@ event_list = [
 
   [10,1, "8pm - 10pm", "September 18, 2015"],
 
-  [11,10, "9pm - 1am", "September 17, 2015"]
+  [11,10, "9pm - 1am", "September 17, 2015"],
+
+  [12,8, "8pm -10pm", "September 18, 2015"]
 
 
 ]

@@ -4,13 +4,14 @@
      <%= @act.name %>
    <br>
   </div>
+  <p class="act-image-wrapper">
+    <img class="act-image-big" src=<%= @act.image %>
+  </p>
+  <br>
   <div class="act-details">
     <li>Genre: <%= @act.genre %></li>
     <li><%=link_to "Website",  @act.website %></li>
   </div>
-  <p class="act-image-wrapper">
-    <img class="act-image-big" src=<%= @act.image %>
-  </p>
   <br>
   <div class="act-description">
     <%= @act.description %>
