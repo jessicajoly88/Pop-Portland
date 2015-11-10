@@ -1,0 +1,9 @@
+<div class="container">
+<ul>
+  <% @events.each do |event| %>
+    <li><%= event.time_period %> </li>
+      <li><%= event.date %> </li>
+      <li><%= event.act.name %> </li>
+  <% end %>
+</ul>
+</div>

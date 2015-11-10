@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :acts
 
   resources :venues
+
+  resources :events, :only => [:show, :index]
 end
