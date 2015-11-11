@@ -79,7 +79,7 @@ event_list = [
 
   [4,10, "8pm - 1am","September 19, 2015"],
 
-  [5,7, "7:30 - 10pm","September 17, 2015"],
+  [5,7, "7:30pm - 10pm","September 17, 2015"],
 
   [6,5, "9pm - 2am","September 19, 2015"],
 
@@ -87,7 +87,7 @@ event_list = [
 
   [8,2, "8pm - 10pm", "September 16th, 2015"],
 
-  [9,5, "9pm - 1pm", "September 16, 2015"],
+  [9,5, "9pm - 1am", "September 16, 2015"],
 
   [10,1, "8pm - 10pm", "September 18, 2015"],
 

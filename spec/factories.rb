@@ -1,4 +1,7 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :user do
+    
+  end
+
   factory(:venue) do
     name ('example venue')
     description ('example description')

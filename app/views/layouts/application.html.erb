@@ -9,10 +9,22 @@
 </head>
 <body>
 
-<%= render 'layouts/header' %>
+ <% if notice || alert %>
+  <div id="alert-row" class="row">
+    <% if notice %>
+    <div class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+    <div class="alert alert-danger"><%= alert %></div>
+    <% end %>
+  </div>
+  <% end %>
 
 
-<%= yield %>
+  <%= render 'layouts/header' %>
+
+
+  <%= yield %>
 
 </body>
 </html>

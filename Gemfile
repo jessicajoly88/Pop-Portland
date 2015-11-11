@@ -18,6 +18,7 @@ gem 'geocoder'
 gem 'gmaps4rails'
 
 
+
 group :development do
   gem 'byebug'
   gem 'web-console'
