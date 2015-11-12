@@ -1,7 +1,7 @@
 
 a.nav-expander {
   background: none repeat scroll 0 0 #000000;
-  color:  #BD25FF;
+  color:  #C8C8C8  ;
   display: block;
   font-size: 15px;
   font-weight: 400;
@@ -37,7 +37,7 @@ a.nav-expander.fixed {
 }
 
 nav {
-  background: black;
+  background:black;
   display: block;
   height: 100%;
   overflow: auto;
@@ -85,7 +85,7 @@ body.nav-expanded {
 }
 
 .main-menu li a {
-  color: #BD25FF;
+  color: #C8C8C8  ;
   text-decoration: none;
 }
 
@@ -151,4 +151,8 @@ body.nav-expanded {
   float: right;
   margin: 0.1em 0.8em -0.1em 0;
   opacity: 1;
+}
+
+.navbar {
+  color:white;
 }
