@@ -1,8 +1,7 @@
 
-// Collapsable menu on navigation bar
 a.nav-expander {
   background: none repeat scroll 0 0 #000000;
-  color: #FFFFFF;
+  color:  #BD25FF;
   display: block;
   font-size: 15px;
   font-weight: 400;
@@ -38,7 +37,7 @@ a.nav-expander.fixed {
 }
 
 nav {
-  background: #2d2f33;
+  background: black;
   display: block;
   height: 100%;
   overflow: auto;
@@ -67,6 +66,7 @@ body.nav-expanded {
   -o-transition: right 0.4s ease-in-out 0s;
 }
 
+
 #nav-close {
   font-weight: 300;
   font-size: 24px;
@@ -78,14 +78,14 @@ body.nav-expanded {
 }
 
 .main-menu li {
-  border-bottom: 1px solid #323949;
+  border-bottom: 1px solid #383838;
   margin-left: 20px;
   font-size: 18px;
   padding: 12px;
 }
 
 .main-menu li a {
-  color: #6F7D8C;
+  color: #BD25FF;
   text-decoration: none;
 }
 
