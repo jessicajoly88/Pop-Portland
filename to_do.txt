@@ -3,29 +3,27 @@ Fix:
 
 - Home Page:
 
-  - Determine Jumbotron image and background color 
   - Menu determine content and links
-  - Change hidden menu colors
   - Figure out layout of index page. What other content on there?
 
 - Venue SHOW page:
-  - Map load problem 
+  - Map load problem
 
 - Event Index page:
   - Make styling pretty
   - PDF version?
   - Make schedule, have events show up by day
 
-  - See events by : date, venue, act 
+  - See events by : date, venue, act
 
 
 
 To do :
 
--Figure out why name isn't saving for user 
+-Figure out why name isn't saving for user
 - Test for authentication process
 - Set up User Profile(include gravatar)
-- Feature: User can add events to their schedule 
+- Feature: User can add events to their schedule
 - Feature: User can email schedule to someone
 
 - Create a README
