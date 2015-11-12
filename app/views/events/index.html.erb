@@ -1,11 +1,12 @@
 <div class="container">
 <ul>
   <% @events.each do |event| %>
-    <h1><li><%= event.date %></li></h1>
+    <% if event.date == DAY_1 %>
+    <h1><li>September 16, 2015 </li></h1>
     <li><%= link_to event.act.name, act_path(event.act)%></li>
     <li><%= event.time_period %></li>
     <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
-
+    <% end %>
   <% end %>
 </ul>
 </div>

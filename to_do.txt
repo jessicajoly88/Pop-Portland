@@ -6,8 +6,6 @@ Fix:
   - Menu determine content and links
   - Figure out layout of index page. What other content on there?
 
-- Venue SHOW page:
-  - Map load problem
 
 - Event Index page:
   - Make styling pretty

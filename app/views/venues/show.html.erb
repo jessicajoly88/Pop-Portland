@@ -10,39 +10,39 @@
       <%=@venue.description%>
     </div>
     <br>
-     <div class="container">
+    <div class="container">
       <div id="map"</div>
+    </div>
   </div>
-</div>
+
+  <h1> Events at this venue:</h1>
+  <% @venue.events.each do |event| %>
+    <ul>
+      <li><%=link_to event.act.name, act_path(event.act) %></li>
+      <li><%=event.time_period %></li>
+      <li><%=event.date%></li>
+    </ul>
+  <% end %>
 
 
-<h1> Events at this venue:</h1>
-<% @venue.events.each do |event| %>
-<ul>
-  <li><%=link_to event.act.name, act_path(event.act) %></li>
-  <li><%=event.time_period %></li>
-  <li><%=event.date%></li>
-</ul>
-<% end %>
-</div>
+  <script type="text/javascript">
+    handler = Gmaps.build('Google');
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
+      markers = handler.addMarkers([
+        {
+          "lat": <%= @venue.latitude %>,
+          "lng": <%= @venue.longitude %>,
+          "picture": {
+            "width":  36,
+            "height": 36,
+          },
+          "infowindow": "<%=@venue.address%>"
+        }
+      ]);
+      handler.bounds.extendWith(markers);
+      handler.fitMapToBounds();
 
-<script type="text/javascript">
-handler = Gmaps.build('Google');
-handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-  markers = handler.addMarkers([
-    {
-      "lat": <%= @venue.latitude %>,
-      "lng": <%= @venue.longitude %>,
-      "picture": {
-        "width":  36,
-        "height": 36,
-      },
-      "infowindow": "<%=@venue.address%>"
-    }
-  ]);
-  handler.bounds.extendWith(markers);
-  handler.fitMapToBounds();
 
-});
-</script>
+  });
+  </script>
 </div>

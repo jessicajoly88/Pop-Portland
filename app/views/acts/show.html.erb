@@ -21,7 +21,7 @@
    <h1><%= event.date %></h1>
    <ul>
      <li> <%= event.time_period %></li>
-     <li><%= link_to event.venue.name,venue_path(event.venue) %></li>
+     <li><%= link_to event.venue.name,venue_path(event.venue), :"data-no-turbolink" => true %></li>
    </ul>
    <% end %>
 </div>

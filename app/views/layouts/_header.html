@@ -8,7 +8,7 @@
     <li><a href="#">About <span class="icon"></span></a></li>
     <li><%=link_to "Schedule", events_path %></li></li>
       <% if current_user %>
-        <li><%= link_to "Personal Profile", user_path(current_user) %></li>
+        <li><%= link_to current_user.name, user_path(current_user) %></li>
         <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to 'Login', new_user_session_path%></li>
