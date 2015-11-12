@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   resources :venues
 
   resources :events, :only => [:show, :index]
+
+  # User profile page
+  resources :users, only: [:show]
 end

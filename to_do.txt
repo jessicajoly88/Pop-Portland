@@ -2,7 +2,7 @@
 Fix:
 
 - Home Page:
-  - Responsivity and size of logo
+
   - Determine Jumbotron image and background color 
   - Menu determine content and links
   - Change hidden menu colors
@@ -22,7 +22,7 @@ Fix:
 
 To do :
 
-- Set up User Login and Sign Up 
+-Figure out why name isn't saving for user 
 - Test for authentication process
 - Set up User Profile(include gravatar)
 - Feature: User can add events to their schedule 

@@ -7,9 +7,17 @@
     <li><%=link_to "Venues", venues_path %></li></li>
     <li><a href="#">About <span class="icon"></span></a></li>
     <li><%=link_to "Schedule", events_path %></li></li>
-    <li><a href="#"> Login <span class="icon"></span></a></li>
+      <% if current_user %>
+        <li><%= link_to "Personal Profile", user_path(current_user) %></li>
+        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to 'Login', new_user_session_path%></li>
+        <li><%= link_to 'Sign up', new_user_registration_path%></li>
+      <% end %>
   </ul>
 </nav>
+
+
 
 <div class="navbar navbar-inverse navbar-fixed-top">
 
