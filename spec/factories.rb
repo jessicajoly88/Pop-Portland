@@ -1,5 +1,9 @@
-FactoryGirl.define do  factory :user do
-    
+FactoryGirl.define do
+
+  factory :user do
+    name Faker::Name.name
+    email Faker::Internet.email
+    password 'password' 
   end
 
   factory(:venue) do
@@ -8,7 +12,7 @@ FactoryGirl.define do  factory :user do
     address ('example address')
   end
 
- factory(:act) do
+  factory(:act) do
     name ('example venue')
     description ('example description')
     website('example website')
