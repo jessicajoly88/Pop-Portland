@@ -9,9 +9,7 @@ Fix:
 
 - Event Index page:
   - Make styling pretty
-  - PDF version?
   - Make schedule, have events show up by day
-
   - See events by : date, venue, act
 
 

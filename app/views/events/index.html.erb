@@ -1,12 +1,48 @@
-<div class="container">
-<ul>
-  <% @events.each do |event| %>
-    <% if event.date == DAY_1 %>
-    <h1><li>September 16, 2015 </li></h1>
-    <li><%= link_to event.act.name, act_path(event.act)%></li>
-    <li><%= event.time_period %></li>
-    <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
-    <% end %>
-  <% end %>
-</ul>
+<br>
+<br>
+<br>
+<br>
+<div id="schedule-display">
+  <div id="schedule-display-3">
+    <div id="schedule-display-2">
+      <div id="schedule-display-1">
+        <div id="col1">
+          <h1><li><%= DAY_1 %></li></h1>
+          <% @events.where({ date: DAY_1 }).each do |event| %>
+            <li><%= link_to event.act.name, act_path(event.act)%></li>
+            <li><%= event.time_period %></li>
+            <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <br>
+          <% end %>
+        </div>
+        <div id="col2">
+          <h1><li><%= DAY_2 %></li></h1>
+          <% @events.where({ date: DAY_2 }).each do |event| %>
+            <li><%= link_to event.act.name, act_path(event.act)%></li>
+            <li><%= event.time_period %></li>
+            <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <br>
+          <% end %>
+        </div>
+        <div id="col3">
+          <h1><li><%= DAY_3 %></li></h1>
+          <% @events.where({ date: DAY_3 }).each do |event| %>
+            <li><%= link_to event.act.name, act_path(event.act)%></li>
+            <li><%= event.time_period %></li>
+            <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <br>
+          <% end %>
+        </div>
+        <div id="col4">
+          <h1><li><%= DAY_4 %></li></h1>
+          <% @events.where({ date: DAY_4 }).each do |event| %>
+            <li><%= link_to event.act.name, act_path(event.act)%></li>
+            <li><%= event.time_period %></li>
+            <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <br>
+          <% end %>
+        </div>
+      </div>
+    </div
+  </div>
 </div>

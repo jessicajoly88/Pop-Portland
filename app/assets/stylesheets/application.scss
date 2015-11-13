@@ -15,8 +15,6 @@ body, html {
 
 }
 
-//Act round image
-
 .img-div{
     height:300px;
     width:300px;
@@ -80,7 +78,7 @@ body, html {
   text-align: center;
   margin-left:-5%;
   padding :0px;
-  height: 600px;
+  height: 800px;
   width: 110% !important;
   margin-top: -12%;
 }
@@ -98,6 +96,14 @@ li {
   list-style-type: none;
 }
 
+.venue-display-row {
+
+  height:300px;
+  width:300px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+}
 
 .act-header {
   margin-top:4rem;
@@ -149,3 +155,79 @@ li {
   margin-left:6%;
   font-size:1.2em;
 }
+
+#schedule-display {
+  padding-top:100px;
+  clear: left;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+#schedule-display-3 {
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+}
+
+#schedule-display-2 {
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+}
+
+#schedule-display-1 {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 25%;
+
+}
+
+#col1 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 77%;
+  border-right: 1px solid #CC33FF;
+
+
+}
+
+#col2 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 81%;
+  border-right: 1px solid #CC33FF;
+
+}
+
+#col3 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 85%;
+  border-right: 1px solid #CC33FF;
+
+}
+
+#col4 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 89%;
+
+
+}
+
+// -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
+// column-gap: 50px;
+// -webkit-column-rule: 1px solid #CC33FF;

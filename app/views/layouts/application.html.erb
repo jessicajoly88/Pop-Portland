@@ -7,11 +7,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
- <% if controller.controller_name == 'venues' %>
-        <body data-no-turbolink>
-      <% else %>
-        <body >
-      <% end %>
 
 
  <% if notice || alert %>

@@ -1,4 +1,7 @@
 DAY_1 = "September 16, 2015"
+DAY_2 = "September 17, 2015"
+DAY_3 = "September 18, 2015"
+DAY_4 = "September 19, 2015"
 
 
 class ApplicationController < ActionController::Base
