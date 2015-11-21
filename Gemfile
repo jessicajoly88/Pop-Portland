@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails'
-gem 'pg'
+gem 'pg', '~> 0.18.4'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
@@ -16,6 +16,7 @@ gem 'rest-client'
 gem 'jquery-turbolinks'
 gem 'geocoder'
 gem 'gmaps4rails'
+
 
 
 group :development do
@@ -38,4 +39,5 @@ group :test do
   gem 'shoulda-matchers', '3.0.0'
   gem 'capybara'
   gem 'simplecov', require: false
+
 end
