@@ -1,5 +1,6 @@
 require 'rails_helper'
 
 describe User do
-  it {should have_and_belong_to_many :events}
+  it {expect have_many :events}
+  it {expect have_many :favorites}
 end
