@@ -29,3 +29,9 @@
   <br>
   <%= @act.songs.first.html.html_safe %>
 </div>
+
+<%=form_for(current_user, Favorite.new) do |f| %>
+<%= f.hidden_field :event_id, :value => event.id %>
+<% end %>
+
+then you would grab user.id in the favorite new/create controller

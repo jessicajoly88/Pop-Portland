@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   resources :events, :only => [:show, :index]
 
   # User profile page
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    resources :favorites
+  end
 end
