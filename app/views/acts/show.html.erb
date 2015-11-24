@@ -21,7 +21,10 @@
        <h1><%= event.date %></h1>
        <ul>
          <li> <%= event.time_period %></li>
-         <li><%= link_to event.venue.name,venue_path(event.venue), :"data-no-turbolink" => true %></li>
+         <li><%= link_to event.venue.name, venue_path(event.venue), :"data-no-turbolink" => true %></li>
+         <% if user_signed_in? %>
+           <li><%= link_to "Add to Schedule", new_user_favorite_path(current_user)%></li>
+         <% end %>
        </ul>
     <% end %>
   </div>
@@ -30,8 +33,4 @@
   <%= @act.songs.first.html.html_safe %>
 </div>
 
-<%=form_for(current_user, Favorite.new) do |f| %>
-<%= f.hidden_field :event_id, :value => event.id %>
-<% end %>
-
-then you would grab user.id in the favorite new/create controller
+=
