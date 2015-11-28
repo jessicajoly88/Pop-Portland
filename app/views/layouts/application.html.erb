@@ -7,24 +7,21 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
-
- <% if notice || alert %>
-  <div id="alert-row" class="row">
-    <% if notice %>
-    <div class="alert alert-success"><%= notice %></div>
-    <% end %>
-    <% if alert %>
-    <div class="alert alert-danger"><%= alert %></div>
-    <% end %>
-  </div>
+  <body>
+  <% if notice || alert %>
+    <div id="alert-row" class="row">
+      <% if notice %>
+      <div class="alert alert-success"><%= notice %></div>
+      <% end %>
+      <% if alert %>
+      <div class="alert alert-danger"><%= alert %></div>
+      <% end %>
+    </div>
   <% end %>
-
 
   <%= render 'layouts/header' %>
 
-
   <%= yield %>
 
-</body>
+  </body>
 </html>
