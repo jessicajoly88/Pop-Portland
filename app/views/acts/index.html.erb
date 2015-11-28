@@ -1,12 +1,12 @@
 <div class="container">
-<ul>
-  <% @acts.each do |act| %>
-    <li>
-    <br>
-      <div class="act-display">
-        <%= link_to act.name, act_path(act) %>
-      </div>
-     </li>
-  <% end %>
-</ul>
+  <ul>
+    <% @acts.each do |act| %>
+      <li>
+      <br>
+        <div class="act-display">
+          <%= link_to act.name, act_path(act) %>
+        </div>
+       </li>
+    <% end %>
+  </ul>
 </div>

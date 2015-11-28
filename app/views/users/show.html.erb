@@ -1,4 +1,14 @@
-<div class= "profile-header">
-  <p><%=@user.name %> </p>
+<div class="col-md-10 col-md-offset-1">
+  <div class= "profile-header">
+    <p>Hey, <%=@user.name %>! Here's your schedule:</p>
+  </div>
+<hr>
+  <% @user.favorites.each do |favorite|%>
+    <h1><%= favorite.event.date %></h1>
+    <ul>
+      <li><%= link_to favorite.event.act.name, act_path(favorite.event.act) %></li>
+      <li><%= favorite.event.time_period %></li>
+      <li><%= link_to favorite.event.venue.name, venue_path(favorite.event.venue), :"data-no-turbolink" => true %></li>
+    </ul>
+  <% end %>
 </div>
-
