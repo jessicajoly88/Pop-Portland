@@ -1,32 +1,45 @@
 
 Fix:
 
-- Home Page:
 
+
+- Home Page:
+  - Center act name display on circles
   - Menu determine content and links
   - Figure out layout of index page. What other content on there?
-
+  - How can I make it so some acts show up then rest pop when click show all?
 
 - Event Index page:
   - Make styling pretty
   - Make Schedule layout nicer/ more dynamic
   - See events by : date, venue, act
 
+-Venues page layout
+-Acts page layout
 
 
-To do :
+To do BackEnd :
 
 - Set up User Profile(include gravatar)
-- Feature: User can add events to their schedule
+
 - Feature: User can email schedule to someone
 
 - Create a README
 
+- Feature: User can add events to their schedule
+
+Nov.23 :
+ - Added action to favorite controller, need to grab info from from
 
 In show.html.erb / users
 
 <%=form_for(current_user, Favorite.new) do |f| %>
 <%= f.hidden_field :event_id, :value => event.id %>
+<% end %>
+
+<%=form_for [@user, Favorite.new] do |f| %>
+  <%= f.hidden_field :event_id, :value => event.id %>
+  <%= f.submit 'Add to Favorites', class: "btn btn-default" %>
 <% end %>
 
 then you would grab user.id in the favorite new/create controller
