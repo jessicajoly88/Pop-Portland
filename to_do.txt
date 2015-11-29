@@ -1,7 +1,7 @@
 
 Specs:
 - Integration : create of favorites
-- Seperate CSS files
+
 
 
 - Create a README

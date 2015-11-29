@@ -3,6 +3,10 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700);
 @import "nav_menu";
 @import "user_profile";
+@import "home_page";
+@import "act_page";
+@import "venue_page";
+@import "schedule_page";
 
 body, html {
   margin-top: 30px;
@@ -16,72 +20,6 @@ body, html {
   text-align: center;
   font-weight: bolder;
 }
-
-h2.title {
-  font-weight:400;
-  text-align:center;
-  font-size: 3.75em;
-  letter-spacing: 0.15rem;
-  color:#000000;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
-
-
-.img-div {
-    height:300px;
-    width:300px;
-    overflow:hidden;
-    border-radius:50%;
-    border-style: solid;
-    border-color:#BD25FF;
-    margin: auto;
-    margin-bottom: 50px;
-    position: relative;
-
-    .img-circle {
-      opacity: 0.4;
-      filter: alpha(opacity=40);
-    }
-
-    .act-text-display {
-      text-decoration:none;
-      font-weight:700;
-      font-size: 1.5em;
-      color:#000000;
-      opacity:1.0;
-      filter: alpha(opacity=100);
-    }
-
-    &:hover {
-      .act-text-display {
-        color:transparent;
-      }
-      .img-circle {
-        opacity: 1.0;
-        filter: alpha(opacity=100);
-
-      }
-    }
-}
-
-.img-div img {
-    -webkit-transform:translate(-50%);
-    margin-left:125px;
-    height: 100%;
-    width: auto;
-}
-
-.act-display-name {
-    left: 0;
-    position:absolute;
-    text-align:center;
-    top: 100px;
-    width: 20%;
-    font-size: 1.8em;
-    padding: 0 0 13% 35%;
-}
-
 
 .main-jumbotron {
   background-image: url("jumbotron copy.jpg");
@@ -115,130 +53,8 @@ a {
 }
 
 
-.venue-display-row {
-  height:300px;
-  width:300px;
-  margin: auto;
-  margin-bottom: 50px;
-  position: relative;
-}
 
-.act-header {
-  margin-top:4rem;
-  font-size: 3em;
-  color:black;
-  font-weight: 400;
-  text-align:center;
-}
 
-.description {
-  max-width:85%;
-  margin-left:6%;
-  font-size:1.2em;
-}
-
-.act-details {
-  font-size: 1.0em;
-  font-weight:300;
-  max-width:85%;
-  margin-left:6%;
-}
-
-.act-image-wrapper {
-   text-align: center;
-}
-
-.act-image-big {
-   border-radius: 5px;
-   margin: 5px;
-}
-
-#map {
-  width: 975px;
-  height: 500px;
-  text-align:center;
-}
-
-.venue-header {
-  margin-top:4rem;
-  font-size: 3em;
-  color:black;
-  font-weight: 400;
-  text-align:center;
-}
-
-.venue-description {
-  max-width:85%;
-  margin-left:6%;
-  font-size:1.2em;
-}
-
-#schedule-display {
-  padding-top:100px;
-  clear: left;
-  float: left;
-  width: 100%;
-  overflow: hidden;
-  overflow-x: hidden;
-  overflow-y: hidden;
-
-}
-
-#schedule-display-3 {
-    clear: left;
-    float: left;
-    width: 100%;
-    position: relative;
-    right: 25%;
-}
-
-#schedule-display-2 {
-    clear: left;
-    float: left;
-    width: 100%;
-    position: relative;
-    right: 25%;
-}
-
-#schedule-display-1 {
-  float: left;
-  width: 100%;
-  position: relative;
-  right: 25%;
-
-}
-
-#col1 {
-  float: left;
-  width: 21%;
-  position: relative;
-  left: 77%;
-  border-right: 1px solid #CC33FF;
-}
-
-#col2 {
-  float: left;
-  width: 21%;
-  position: relative;
-  left: 81%;
-  border-right: 1px solid #CC33FF;
-}
-
-#col3 {
-  float: left;
-  width: 21%;
-  position: relative;
-  left: 85%;
-  border-right: 1px solid #CC33FF;
-
-}
-
-#col4 {
-  float: left;
-  width: 21%;
-  position: relative;
-  left: 89%;
-}
 
 
 

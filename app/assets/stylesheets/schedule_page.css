@@ -1,0 +1,67 @@
+#schedule-display {
+  padding-top:100px;
+  clear: left;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+#schedule-display-3 {
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+}
+
+#schedule-display-2 {
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 25%;
+}
+
+#schedule-display-1 {
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 25%;
+
+}
+
+#col1 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 77%;
+  border-right: 1px solid #CC33FF;
+}
+
+#col2 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 81%;
+  border-right: 1px solid #CC33FF;
+}
+
+#col3 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 85%;
+  border-right: 1px solid #CC33FF;
+
+}
+
+#col4 {
+  float: left;
+  width: 21%;
+  position: relative;
+  left: 89%;
+}
+
