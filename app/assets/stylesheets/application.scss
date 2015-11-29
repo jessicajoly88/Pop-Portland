@@ -4,25 +4,31 @@
 @import "nav_menu";
 @import "user_profile";
 
-
-body {
-  background-image: url("little-pluses.png");
-}
-
 body, html {
   margin-top: 30px;
   width: 100% !important;
   font-family: 'Josefin Sans', sans-serif;
+  background-image: url("little-pluses.png");
 }
 
 #alert-row {
   margin-bottom: -1%;
   text-align: center;
   font-weight: bolder;
-
 }
 
-.img-div{
+h2.title {
+  font-weight:400;
+  text-align:center;
+  font-size: 3.75em;
+  letter-spacing: 0.15rem;
+  color:#000000;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+
+.img-div {
     height:300px;
     width:300px;
     overflow:hidden;
@@ -32,37 +38,38 @@ body, html {
     margin: auto;
     margin-bottom: 50px;
     position: relative;
- /* For IE8 and earlier */
+
     .img-circle {
       opacity: 0.4;
       filter: alpha(opacity=40);
     }
+
     .act-text-display {
       text-decoration:none;
-      font-weight: 700;
-      font-size:1.5em;
+      font-weight:700;
+      font-size: 1.5em;
       color:#000000;
       opacity:1.0;
       filter: alpha(opacity=100);
     }
+
     &:hover {
       .act-text-display {
         color:transparent;
       }
       .img-circle {
         opacity: 1.0;
-        filter: alpha(opacity=100); /* For IE8 and earlier */
+        filter: alpha(opacity=100);
+
       }
     }
 }
 
-.img-div img{
+.img-div img {
     -webkit-transform:translate(-50%);
     margin-left:125px;
     height: 100%;
     width: auto;
-
-    // filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 .act-display-name {
@@ -124,7 +131,7 @@ a {
   text-align:center;
 }
 
-.act-description {
+.description {
   max-width:85%;
   margin-left:6%;
   font-size:1.2em;
@@ -235,7 +242,3 @@ a {
 
 
 
-
-// -webkit-column-gap: 50px; /* Chrome, Safari, Opera */
-// column-gap: 50px;
-// -webkit-column-rule: 1px solid #CC33FF;

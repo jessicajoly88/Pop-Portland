@@ -1,5 +1,6 @@
 class FavoritesController < ApplicationController
   def new
+
   end
 
   def create
@@ -14,9 +15,10 @@ class FavoritesController < ApplicationController
   end
 
   private
-    def favorite_params
-      params.require(:favorite).permit(:event_id)
-    end
+
+  def favorite_params
+    params.require(:favorite).permit(:event_id)
+  end
 end
 
 

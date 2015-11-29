@@ -1,17 +1,15 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EventApp</title>
+  <title>Pop Portland!</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="js/jquery-1.9.1.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
   <body>
-
-  <%= render 'layouts/header' %>
-
-  <%= yield %>
-
+    <%= render 'layouts/header' %>
+    <%= yield %>
   </body>
 </html>

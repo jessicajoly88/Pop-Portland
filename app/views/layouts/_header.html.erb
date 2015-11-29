@@ -1,12 +1,10 @@
 <nav>
   <ul class="list-unstyled main-menu">
-
     <!--Include your navigation here-->
     <li class="text-right"><a href="#" id="nav-close">X</a></li>
-    <li><%=link_to "Artists", acts_path %></li>
+    <li><%=link_to "Line-up", acts_path %></li>
     <li><%=link_to "Venues", venues_path %></li></li>
-    <li><a href="#">About <span class="icon"></span></a></li>
-    <li><%=link_to "Schedule", events_path %></li></li>
+    <li><%=link_to "Schedule", events_path %></li>
       <% if current_user %>
         <li><%= link_to current_user.name, user_path(current_user) %></li>
         <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
@@ -20,6 +18,8 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <%= render 'layouts/notice' %>
   <a class="navbar-brand" href="/">Pop Portland!</a>
+
+    <a class="navbar-brand" href="/">Pop Portland!</a>
     <div class="navbar-header pull-right">
       <a id="nav-expander" class="nav-expander fixed">
         MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>

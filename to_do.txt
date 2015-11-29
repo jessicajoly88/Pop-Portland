@@ -3,6 +3,7 @@ Specs:
 - Integration : create of favorites
 - Seperate CSS files
 
+
 - Create a README
 
 - Fix Alert displays
@@ -11,7 +12,14 @@ Home Page:
   - Menu determine content and links
   - Figure out layout of index page. What other content on there?
 
-Event Index page:
+
+- Home Page:
+  - Center act name display on circles
+  - Menu determine content and links
+  - Figure out layout of index page. What other content on there?
+  - How can I make it so some acts show up then rest pop when click show all?
+
+- Event Index page:
   - Make styling pretty
   - Make Schedule layout nicer/ more dynamic
   - See events by : date, venue, act
@@ -21,4 +29,8 @@ User/Scheduling
   - Have add to schedule capabilities in other places?
   - Add pop up message "You're going to x concert!"
   - Make user profile page nice
+
+
+
+
 

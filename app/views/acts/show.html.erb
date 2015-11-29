@@ -12,31 +12,26 @@
     <li><%=link_to "Website",  @act.website %></li>
   </div>
   <br>
-  <div class="act-description">
+  <div class="description">
     <%= @act.description %>
   </div>
 
   <div class="container-fluid">
     <% @act.events.each do |event|%>
-       <h1><%= event.date %></h1>
-       <ul>
-         <li><%= event.time_period %></li>
-         <li><%= link_to event.venue.name, venue_path(event.venue), :"data-no-turbolink" => true %></li>
-         <% if user_signed_in? %>
-           <%= render 'form', event: event %>
-         <% end %>
-       </ul>
+      <h1><%= event.date %></h1>
+      <ul>
+        <li><%= event.time_period %></li>
+        <li><%= link_to event.venue.name, venue_path(event.venue), :"data-no-turbolink" => true %></li>
+        <% if user_signed_in? %>
+          <%= render 'form', event: event %>
+        <% end %>
+      </ul>
     <% end %>
   </div>
   <br>
   <br>
   <%= @act.songs.first.html.html_safe %>
 </div>
-
-
-
-
-
 
 
 
