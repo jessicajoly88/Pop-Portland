@@ -1,5 +1,17 @@
 .profile-header {
   text-align: left;
   font-size: 3em;
-  padding-top:2%;
+  padding-top: 3%;
+  padding-bottom: 2.5%;
+  color: #BD25FF;
+  text-align:center;
+
+}
+
+.event-box {
+  border-style: solid;
+  border-color:#BD25FF;
+  margin:10px 5px 45px;
+  width: 25%;
+  margin:10px 5px 15px;
 }

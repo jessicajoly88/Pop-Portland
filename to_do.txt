@@ -1,7 +1,7 @@
 
-Specs:
-- Integration : create of favorites
-
+Integration Specs :
+  - create of favorites
+  - delete favorites
 
 
 - Create a README
@@ -29,6 +29,8 @@ User/Scheduling
   - Have add to schedule capabilities in other places?
   - Add pop up message "You're going to x concert!"
   - Make user profile page nice
+  - Take into account if person already has event in schedule = error
+  - Sort user's events by date?
 
 
 

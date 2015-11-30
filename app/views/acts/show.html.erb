@@ -23,7 +23,7 @@
         <li><%= event.time_period %></li>
         <li><%= link_to event.venue.name, venue_path(event.venue), :"data-no-turbolink" => true %></li>
         <% if user_signed_in? %>
-          <%= render 'form', event: event %>
+          <%= render 'favorite_form', event: event %>
         <% end %>
       </ul>
     <% end %>

@@ -1,4 +1,4 @@
 <%=form_for [current_user, Favorite.new] do |f| %>
   <%= f.hidden_field :event_id, value: event.id  %>
-  <%= f.submit 'Add to Favorites', class: "btn btn-default" %>
+  <%= f.submit 'Add to Schedule', class: "btn btn-default" %>
 <% end %>
