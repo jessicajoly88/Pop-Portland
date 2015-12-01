@@ -16,9 +16,20 @@ describe 'the favorite process' do
     act = Act.create(:name => "Ariel Pink", :genre => "folk", :description => "the best band around", :website => "www.arielpink.com")
     visit acts_path(act)
     click_on 'Add to Schedule'
-    expect(page).to have_content "Here's your schedule"
+    expect(page).to have_content "Delete Event"
   end
 
+  it 'deletes a user favorite' do
+    user = FactoryGirl.create(:user)
+    visit root_url
+    log_in user
+    act = Act.create(:name => "Ariel Pink", :genre => "folk", :description => "the best band around", :website => "www.arielpink.com")
+    visit acts_path(act)
+    click_on 'Add to Schedule'
+    expect(page).to have_content "Festival Schedule"
+    click_on "Delete Event"
+    expect(page).to_not have_content "Ariel Pink"
+  end
 end
 
 

@@ -1,16 +1,4 @@
-<div class="container">
-  <ul>
-    <% @acts.each do |act| %>
-      <li>
-      <br>
-        <div class="act-display">
-          <%= link_to act.name, act_path(act) %>
-        </div>
-       </li>
-    <% end %>
-  </ul>
-</div>
-
+<br>
 <h2 class="title">The Line-Up</h2>
   <% @acts.each do |act| %>
     <div class="col-md-4 col-sm-6 col-xs-12">

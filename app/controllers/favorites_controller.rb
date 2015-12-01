@@ -9,7 +9,8 @@ class FavoritesController < ApplicationController
     if @favorite.save
       redirect_to user_path(current_user)
     else
-      render :new
+      flash[:notice] = "This event is already part of your schedule!"
+      redirect_to acts_path
     end
   end
 
