@@ -1,5 +1,5 @@
 
-Integration Specs :
+Integration Specs NOT WORKING :
   - create of favorites
   - delete favorites
 

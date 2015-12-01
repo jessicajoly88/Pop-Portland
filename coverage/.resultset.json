@@ -606,7 +606,6 @@
         1,
         1,
         0,
-        0,
         null,
         null,
         null,
@@ -657,6 +656,23 @@
         null,
         null,
         1,
+        1,
+        null
+      ],
+      "/Users/jessica/projects/event_app/spec/models/favorite_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/jessica/projects/event_app/app/models/favorite.rb": [
+        1,
+        1,
+        1,
+        null,
         1,
         null
       ],
@@ -771,6 +787,6 @@
         null
       ]
     },
-    "timestamp": 1448847578
+    "timestamp": 1448939673
   }
 }
