@@ -6,7 +6,7 @@ describe Song do
 
   it "doesn't save the song if SoundCloud gives an error" do
     song = Song.new(:url => 'www.https://soundcloud.com/record/junius-meyvant-color-')
-    song.save.should be false
-
+    expect(song.save).to be false
   end
+
 end

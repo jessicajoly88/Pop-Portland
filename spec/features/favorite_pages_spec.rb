@@ -8,14 +8,13 @@ def log_in(user)
   click_button 'Log in'
 end
 
-describe 'the favorite process' do
+context 'the favorite process' do
   it 'creates a new user favorite' do
     user = FactoryGirl.create(:user)
     visit root_url
     log_in user
-    act = Act.create(:name => "Ariel Pink", :genre => "folk", :description => "the best band around", :website => "www.arielpink.com")
-    visit acts_path(act)
-    click_on 'Add to Schedule'
+    click_link("Ariel Pink", :match => :first)
+    click_button('Add to Schedule', :match => :first)
     expect(page).to have_content "Delete Event"
   end
 
@@ -23,12 +22,24 @@ describe 'the favorite process' do
     user = FactoryGirl.create(:user)
     visit root_url
     log_in user
-    act = Act.create(:name => "Ariel Pink", :genre => "folk", :description => "the best band around", :website => "www.arielpink.com")
-    visit acts_path(act)
-    click_on 'Add to Schedule'
+    click_link("Ariel Pink", :match => :first)
+    click_button('Add to Schedule', :match => :first)
     expect(page).to have_content "Festival Schedule"
     click_on "Delete Event"
     expect(page).to_not have_content "Ariel Pink"
+  end
+
+  it 'returns an error if event is already a user favorite' do
+    user = FactoryGirl.create(:user)
+    visit root_url
+    log_in user
+    click_link("Ariel Pink", :match => :first)
+    click_button('Add to Schedule', :match => :first)
+    expect(page).to have_content "Festival Schedule"
+    visit root_url
+    click_link("Ariel Pink", :match => :first)
+    click_button('Add to Schedule', :match => :first)
+    expect(page).to have_content "This event is already part of your schedule!"
   end
 end
 
