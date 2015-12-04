@@ -12,11 +12,11 @@ When signed-in, users can also tag events as favorites and add them to their pro
 
 _Planned future updates_
 
-*_Add email feature so users can share their schedules_*
-*_Implement social media features on user page_*
-*_Add feature that calculates directions from event to event for a user's festival day_*
-*_Develop algorithm to propose events to users based on current festival favorites_*
-*_Refactor alerts pop-up window (ex: 'Success!')_*
+*_Add email feature so users can share their schedules_
+*_Implement social media features on user page_
+*_Add feature that calculates directions from event to event for a user's festival day_
+*_Develop algorithm to propose events to users based on current festival favorites_
+*_Refactor alerts pop-up tab (ex: 'Success!')_
 
 
 ## Setup
