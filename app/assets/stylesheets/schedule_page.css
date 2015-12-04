@@ -1,13 +1,13 @@
 .schedule-header {
-  color: #BD25FF;
+  color: black;
   text-align: center;
-  font-size: 3em;
-  padding-top:2%;
-  padding-bottom:2%;
+  font-size: 4em;
+  padding-top:2.5%;
+  padding-bottom:0%;
 }
 
 #schedule-display {
-  padding-top:6%;
+  padding-top:3%;
   padding-bottom:3%;
   clear: left;
   float: left;

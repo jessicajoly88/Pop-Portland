@@ -1,12 +1,15 @@
-<div class="container">
-<ul>
-  <% @venues.each do |venue| %>
+<div class="venue-list-header">
+  <div class="milliprik"></div>
+  <p> Venues </p>
+</div>
+<% @venues.each do |venue| %>
+  <div class="col-md-4 col-sm-6 col-xs-12">
     <li>
-    <br>
-      <div class="act-display">
+      <div class="venue-name">
         <%= link_to venue.name, venue_path(venue) %>
       </div>
     </li>
-  <% end %>
-</ul>
-</div>
+  </div>
+<% end %>
+
+

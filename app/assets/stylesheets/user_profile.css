@@ -1,17 +1,28 @@
 .profile-header {
-  text-align: left;
   font-size: 3em;
-  padding-top: 3%;
-  padding-bottom: 2.5%;
-  color: #BD25FF;
+  padding-top: 2.5%;
+  padding-bottom: 3%;
+  color: black;
   text-align:center;
-
 }
 
 .event-box {
   border-style: solid;
   border-color:#BD25FF;
-  margin:10px 5px 45px;
-  width: 25%;
-  margin:10px 5px 15px;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #BD25FF;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+  padding-top:11%;
+}
+
+a {
+  color: #BD25FF;
+  text-decoration: none;
 }

@@ -2,35 +2,51 @@ h2.title {
   font-weight:400;
   text-align:center;
   font-size: 3.75em;
-  letter-spacing: 0.15rem;
   color:#000000;
   padding-top: 1%;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
 }
 
+.instructions {
+  text-align:center;
+  font-size:1.3em;
+  weight:300;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+#hide-all {
+  display:none;
+}
+
+#show-all {
+  cursor: pointer;
+  padding-bottom:5%;
+}
+
+
 .milliprik {
-    margin: 2.5rem auto 0.625rem auto;
-    border-top: 4px solid #000000;
-    width: 15rem;
-    display: block;
+  margin: 2.5rem auto 0.625rem auto;
+  border-top: 4px solid #BD25FF;
+  width: 15rem;
+  display: block;
 }
 
 .img-div {
-    height:300px;
-    width:300px;
-    overflow:hidden;
-    border-radius:50%;
-    border-style: solid;
-    border-color:#BD25FF;
-    margin: auto;
-    margin-bottom: 50px;
-    position: relative;
+  height:300px;
+  width:300px;
+  overflow:hidden;
+  border-radius:50%;
+  border-style: solid;
+  border-color:#BD25FF;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
 
     .img-circle {
       opacity: 0.4;
       filter: alpha(opacity=40);
     }
-
     .act-text-display {
       text-decoration:none;
       font-weight:700;
@@ -38,8 +54,8 @@ h2.title {
       color:#000000;
       opacity:1.0;
       filter: alpha(opacity=100);
+      text-align:center;
     }
-
     &:hover {
       .act-text-display {
         color:transparent;
@@ -53,33 +69,21 @@ h2.title {
 }
 
 .img-div img {
-    -webkit-transform:translate(-50%);
-    margin-left:125px;
-    height: 100%;
-    width: auto;
+  -webkit-transform:translate(-50%);
+  margin-left:125px;
+  height: 100%;
+  width: auto;
 }
 
 .act-display-name {
-    left: 0;
-    position:absolute;
-    text-align:center;
-    top: 100px;
-    width: 20%;
-    font-size: 1.8em;
-    padding: 0 0 13% 35%;
-}
-
-.about-section {
+  left: 0;
+  position:absolute;
   text-align:center;
-  font-size:1.2em;
+  top: 100px;
+  width: 20%;
+  font-size: 1.8em;
+  padding: 0 0 13% 35%;
 }
 
-#display-control {
-  display:none;
 
-}
-
-#show-all {
-   cursor: pointer;
-}
 

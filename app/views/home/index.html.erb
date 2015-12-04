@@ -2,15 +2,19 @@
  <a href="/"><img class="main-logo img-responsive" src="/assets/logo.png"></a>
 </div>
 
-<h2 class="title" id="show-all">The Line-Up</h2>
-
-<div id="display-control">
+<div class="instructions">
   <div class="container">
-  <div class="milliprik"></div>
+    <p> Already bought your ticket to the hippest long weekend of the year? Wise life decision.
+     Now, let's get your sorted with all things informaton. Check out directions to venues, listen to all the featured bands and sign-up or log-in to create your festival schedule.
+   </p>
+  </div>
+</div>
 
-
-
-      <% @acts.each do |act| %>
+<div class="milliprik"></div>
+<h2 class="title" id="show-all">Explore</h2>
+<div id="hide-all">
+  <div class="container-acts">
+    <% @acts.each do |act| %>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="img-div">
             <%= link_to image_tag(act.image, class: "img-circle" ), act_path(act) %>
@@ -20,18 +24,11 @@
           </div>
         </div>
       <% end %>
-
   </div>
-</div>
-
-
-<div class="about-section">
-<h2 class="title">Now what? </h2>
-  <p> You've already bought your ticket to the hippest long weekend on the annual music-festival calendar. </p>
 </div>
 
 <script>
   $('#show-all').on('click', function() {
-    $('#display-control').toggle();
+    $('#hide-all').toggle();
   })
 </script>

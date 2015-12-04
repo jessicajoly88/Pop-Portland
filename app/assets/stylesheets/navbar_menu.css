@@ -108,7 +108,7 @@ body.nav-expanded {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
   content: "";
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .main-menu a:hover .caret {
@@ -144,7 +144,6 @@ body.nav-expanded {
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-
 }
 
 .main-menu li > a:hover > span.icon {
@@ -155,4 +154,14 @@ body.nav-expanded {
 
 .navbar {
   color:white;
+}
+
+.navbar-inverse {
+  background-color: black;
+  border-color: #090909;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+  margin-left:1%;
 }
