@@ -73,3 +73,13 @@ h2.title {
   text-align:center;
   font-size:1.2em;
 }
+
+#display-control {
+  display:none;
+
+}
+
+#show-all {
+   cursor: pointer;
+}
+

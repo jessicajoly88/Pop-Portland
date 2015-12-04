@@ -2,24 +2,36 @@
  <a href="/"><img class="main-logo img-responsive" src="/assets/logo.png"></a>
 </div>
 
-<div class="container line-up-wrap">
-<div class="milliprik"></div>
-<h2 class="title">The Line-Up</h2>
-  <div class="line-up-showing">
-    <% @acts.each do |act| %>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="img-div">
-          <%= link_to image_tag(act.image, class: "img-circle" ), act_path(act) %>
-            <div class="act-display-name">
-              <%= link_to act.name, act_path(act), class: "act-text-display" %>
-            </div>
+<h2 class="title" id="show-all">The Line-Up</h2>
+
+<div id="display-control">
+  <div class="container">
+  <div class="milliprik"></div>
+
+
+
+      <% @acts.each do |act| %>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="img-div">
+            <%= link_to image_tag(act.image, class: "img-circle" ), act_path(act) %>
+              <div class="act-display-name">
+                <%= link_to act.name, act_path(act), class: "act-text-display" %>
+              </div>
+          </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+
   </div>
 </div>
+
 
 <div class="about-section">
 <h2 class="title">Now what? </h2>
   <p> You've already bought your ticket to the hippest long weekend on the annual music-festival calendar. </p>
 </div>
+
+<script>
+  $('#show-all').on('click', function() {
+    $('#display-control').toggle();
+  })
+</script>
