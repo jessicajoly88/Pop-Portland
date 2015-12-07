@@ -1,7 +1,7 @@
 .profile-header {
   font-size: 3em;
-  padding-top: 2.5%;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 8%;
   color: black;
   text-align:center;
 }
@@ -9,17 +9,15 @@
 .event-box {
   border-style: solid;
   border-color:#BD25FF;
-  height: 250px;
-  width: 250px;
+  height: 275px;
+  width: 275px;
   overflow: hidden;
   border-radius: 50%;
-  border-style: solid;
-  border-color: #BD25FF;
   margin: auto;
   margin-bottom: 50px;
   position: relative;
   text-align: center;
-  padding-top:11%;
+  padding-top:15%;
 }
 
 a {

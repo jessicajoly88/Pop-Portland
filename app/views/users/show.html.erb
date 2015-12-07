@@ -7,10 +7,11 @@
   <% @user.favorites.each do |favorite|%>
     <div class="col-md-4 col-sm-6 col-xs-12">
       <div class="event-box">
-        <h3><%= favorite.event.date %></h3>
-          <li><%= link_to favorite.event.act.name, act_path(favorite.event.act) %></li>
+        <h4><%= favorite.event.date %></h4>
+          <h3><%= link_to favorite.event.act.name, act_path(favorite.event.act) %></h3>
           <li><%= favorite.event.time_period %></li>
           <li><%= link_to favorite.event.venue.name, venue_path(favorite.event.venue), :"data-no-turbolink" => true %></li>
+          <br>
           <li><%= link_to "Delete Event", user_favorite_path(@user,favorite),
                                   :data => {:confirm =>"You sure?",
                                   :method => "delete"}, class:"btn btn-default" %></li>

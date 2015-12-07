@@ -4,6 +4,7 @@
 <div class="container">
   <div class="col-md-10 col-md-offset-1">
     <div class="venue-header">
+      <div class="milliprik"></div>
       <h1><%=@venue.name%></h1>
     </div>
     <div class="venue-description">
@@ -17,11 +18,11 @@
 
     <h2> Events at this venue:</h2>
     <% @venue.events.each do |event| %>
-      <ul>
+      <div class="col-md-4 col-sm-6 col-xs-12">
         <h4><%=link_to event.act.name, act_path(event.act)%></h4>
         <li><%=event.date%></li>
         <li><%=event.time_period %></li>
-      </ul>
+      </div>
     <% end %>
 
     <script type="text/javascript">
@@ -40,6 +41,7 @@
         ]);
         handler.bounds.extendWith(markers);
         handler.fitMapToBounds();
+        handler.getMap().setZoom(14);
     });
     </script>
   </div>
