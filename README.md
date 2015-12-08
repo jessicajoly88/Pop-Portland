@@ -9,13 +9,15 @@
 Pop Portland! is a fictional music festival that celebrates both local and international emerging musical acts. The festival app aims to make is to be a one-stop shop of information for festival goers.
 Users can peruse each act's information page which includes a Soundcloud music sample. They can also see all of a band's events and get all of the venue information(including Google Maps location) for said events.
 When signed-in, users can also tag events as favorites and add them to their profile page.
+[Visit Here](https://portlandpop.herokuapp.com/)
 
-_Planned future updates_
 
-1.Add email feature so users can share their schedules
-2.Implement social media features on user page
-3.Add feature that calculates directions from event to event for a user's festival day
-4.Develop algorithm to propose events to users based on current festival favorites
+## Planned Future Updates
+
+1. Add email feature so users can share their schedules
+2. Implement social media features on user page
+3. Add feature that calculates directions from event to event for a user's festival day
+4. Develop algorithm to propose events to users based on current festival favorites
 
 
 ## Setup
