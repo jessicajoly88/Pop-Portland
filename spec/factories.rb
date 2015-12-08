@@ -3,7 +3,7 @@ FactoryGirl.define do
   factory :user do
     name Faker::Name.name
     email Faker::Internet.email
-    password 'password' 
+    password 'password'
   end
 
   factory(:venue) do
@@ -19,5 +19,4 @@ FactoryGirl.define do
     image ('example image')
     genre ('example genre')
   end
-
 end

@@ -4,7 +4,6 @@ class Song < ActiveRecord::Base
   validates :url, :presence => true
 
 private
-
   def get_html
     request = RestClient.get 'http://soundcloud.com/oembed', :params => { :url => url, :format => 'json' }
     request_parse = JSON.parse(request)

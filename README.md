@@ -1,6 +1,6 @@
 # Pop Portland! Music Festival App
 
-## _Version 1.0, November, 2015_
+## _Version 1.0, December 2015_
 
 #### By _**Jessica Joly**_
 
@@ -12,11 +12,10 @@ When signed-in, users can also tag events as favorites and add them to their pro
 
 _Planned future updates_
 
-*_Add email feature so users can share their schedules_
-*_Implement social media features on user page_
-*_Add feature that calculates directions from event to event for a user's festival day_
-*_Develop algorithm to propose events to users based on current festival favorites_
-*_Refactor alerts pop-up tab (ex: 'Success!')_
+1.Add email feature so users can share their schedules
+2.Implement social media features on user page
+3.Add feature that calculates directions from event to event for a user's festival day
+4.Develop algorithm to propose events to users based on current festival favorites
 
 
 ## Setup

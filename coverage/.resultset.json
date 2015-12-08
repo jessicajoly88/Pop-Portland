@@ -553,7 +553,6 @@
         1,
         1,
         null,
-        null,
         null
       ],
       "/Users/jessica/projects/event_app/config/routes.rb": [
@@ -694,8 +693,6 @@
         1,
         1,
         1,
-        null,
-        null,
         1,
         1,
         null
@@ -713,7 +710,6 @@
         1,
         1,
         1,
-        null,
         1,
         null
       ],
@@ -738,7 +734,6 @@
         1,
         null,
         1,
-        null,
         1,
         13,
         12,
@@ -966,7 +961,6 @@
         1,
         7,
         null,
-        null,
         null
       ],
       "/Users/jessica/projects/event_app/app/controllers/venues_controller.rb": [
@@ -977,12 +971,6 @@
         null,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         1,
@@ -999,6 +987,6 @@
         null
       ]
     },
-    "timestamp": 1449602712
+    "timestamp": 1449604559
   }
 }

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-08T11:25:12-08:00">2015-12-08T11:25:12-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-08T11:55:59-08:00">2015-12-08T11:55:59-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -103,7 +103,7 @@
       <tr>
         <td class="strong"><a href="#23ddba700b9d527503beb1b9895889261c3f0c85" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
+        <td>7</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -113,7 +113,7 @@
       <tr>
         <td class="strong"><a href="#0da0146a4c03a7a4b376ef000a6999610a6bd4df" class="src_link" title="app/controllers/venues_controller.rb">app/controllers/venues_controller.rb</a></td>
         <td class="yellow strong">87.5 %</td>
-        <td>20</td>
+        <td>14</td>
         <td>8</td>
         <td>7</td>
         <td>1</td>
@@ -143,7 +143,7 @@
       <tr>
         <td class="strong"><a href="#3a14682b1f5a3d3d4e6de12e6ebf50ffee0cb1d6" class="src_link" title="app/models/event.rb">app/models/event.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
+        <td>8</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -153,7 +153,7 @@
       <tr>
         <td class="strong"><a href="#015c179e1059e006492a66d5b964f9f0aa90a212" class="src_link" title="app/models/favorite.rb">app/models/favorite.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
+        <td>5</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -163,7 +163,7 @@
       <tr>
         <td class="strong"><a href="#2c65f8d7f18096e9fe9ef594f6738ecd2c49ea59" class="src_link" title="app/models/song.rb">app/models/song.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>18</td>
+        <td>17</td>
         <td>12</td>
         <td>12</td>
         <td>0</td>
@@ -343,7 +343,7 @@
       <tr>
         <td class="strong"><a href="#b874399ba7377a5fd59145e85779627f559a8e1b" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
+        <td>22</td>
         <td>15</td>
         <td>15</td>
         <td>0</td>
@@ -1037,12 +1037,6 @@
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
           <code class="ruby">end</code>
         </li>
       
@@ -1109,31 +1103,31 @@
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">    # @location = Gmaps4rails.build_markers(@venue) do |marker|</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">    #   marker.lat =  @venue.latitude</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    #   marker.lng =  @venue.longitude</code>
+          <code class="ruby">private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    # end</code>
+          <code class="ruby">  def venue_params</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="missed" data-hits="0" data-linenumber="12">
           
           
-          <code class="ruby">    # binding.pry</code>
+          <code class="ruby">    params.require(:venue).permit(:name, :address, :description)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -1143,42 +1137,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">private</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def venue_params</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
-          
-          <code class="ruby">    params.require(:venue).permit(:name, :address, :description)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
@@ -1334,31 +1292,19 @@
           <code class="ruby">  has_many :users, through: :favorites</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  validates :time_period, :presence =&gt; true</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  validates :date, :presence =&gt; true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -1400,19 +1346,13 @@
           <code class="ruby">  belongs_to :event</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  validates :event_id, uniqueness: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -1472,73 +1412,67 @@
           <code class="ruby">private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  def get_html</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="9">
+        <li class="covered" data-hits="13" data-linenumber="8">
           <span class="hits">13</span>
           
           <code class="ruby">    request = RestClient.get &#39;http://soundcloud.com/oembed&#39;, :params =&gt; { :url =&gt; url, :format =&gt; &#39;json&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="10">
+        <li class="covered" data-hits="12" data-linenumber="9">
           <span class="hits">12</span>
           
           <code class="ruby">    request_parse = JSON.parse(request)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">    # Need to call self on html so that it attributes html that you&#39;re fetching to the song.</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="12">
+        <li class="covered" data-hits="12" data-linenumber="11">
           <span class="hits">12</span>
           
           <code class="ruby">    self.html = request_parse[&#39;html&#39;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  rescue RestClient::ResourceNotFound =&gt; error</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">    message = &quot;bad url yo&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">    errors.add(:base, message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">    false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
@@ -5147,7 +5081,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    password &#39;password&#39; </code>
+          <code class="ruby">    password &#39;password&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -5241,12 +5175,6 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>

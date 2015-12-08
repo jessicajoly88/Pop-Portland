@@ -2,12 +2,13 @@
   <div class="milliprik"></div>
   <p> Venues </p>
 </div>
+
 <% @venues.each do |venue| %>
   <div class="col-md-4 col-sm-6 col-xs-12">
     <li>
-      <div class="venue-name">
-        <%= link_to venue.name, venue_path(venue) %>
-      </div>
+    <div class="venue-name">
+      <%= link_to venue.name, venue_path(venue) %>
+    </div>
     </li>
   </div>
 <% end %>
