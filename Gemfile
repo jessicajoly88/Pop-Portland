@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'rails'
-gem 'ruby '2.2.2''
+gem 'ruby', '2.2.2'
 gem 'pg', '~> 0.18.4'
 gem 'uglifier'
 gem 'coffee-rails'
