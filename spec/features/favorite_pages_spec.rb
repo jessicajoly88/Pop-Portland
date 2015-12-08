@@ -9,11 +9,30 @@ def log_in(user)
 end
 
 context 'the favorite process' do
-  it 'creates a new user favorite' do
+  it 'creates a new user favorite through the act page' do
     user = FactoryGirl.create(:user)
     visit root_url
     log_in user
     click_link("Ariel Pink", :match => :first)
+    click_button('Add to Schedule', :match => :first)
+    expect(page).to have_content "You're going to this event!"
+  end
+
+  it 'creates a new user favorite through the venue page' do
+    user = FactoryGirl.create(:user)
+    visit root_url
+    log_in user
+    visit venues_path
+    click_link("Goodfoot Pub & Lounge", :match => :first)
+    click_button('Add to Schedule', :match => :first)
+    expect(page).to have_content "You're going to this event!"
+  end
+
+  it 'creates a new user favorite through the schedule page' do
+    user = FactoryGirl.create(:user)
+    visit root_url
+    log_in user
+    visit events_path
     click_button('Add to Schedule', :match => :first)
     expect(page).to have_content "You're going to this event!"
   end

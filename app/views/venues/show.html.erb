@@ -22,6 +22,9 @@
         <h4><%=link_to event.act.name, act_path(event.act)%></h4>
         <li><%=event.date%></li>
         <li><%=event.time_period %></li>
+        <% if user_signed_in? %>
+          <%= render 'layouts/favorite_form', event: event %>
+        <% end %>
       </div>
     <% end %>
 

@@ -1,6 +1,4 @@
 class FavoritesController < ApplicationController
-  def new
-  end
 
   def create
     @user = User.find(params[:user_id])
@@ -10,7 +8,7 @@ class FavoritesController < ApplicationController
       redirect_to user_path(current_user), :notice => "You're going to this event!"
     else
       flash[:alert] = "This event has already been added to your schedule!"
-      redirect_to acts_path
+      redirect_to user_path(current_user)
     end
   end
 
@@ -26,6 +24,5 @@ class FavoritesController < ApplicationController
   def favorite_params
     params.require(:favorite).permit(:event_id)
   end
-
 end
 

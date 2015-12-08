@@ -12,6 +12,9 @@
             <li><%= link_to event.act.name, act_path(event.act)%></li>
             <li><%= event.time_period %></li>
             <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <% if user_signed_in? %>
+              <%= render 'layouts/favorite_form', event: event %>
+            <% end %>
             <br>
           <% end %>
         </div>
@@ -21,6 +24,9 @@
             <li><%= link_to event.act.name, act_path(event.act)%></li>
             <li><%= event.time_period %></li>
             <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <% if user_signed_in? %>
+              <%= render 'layouts/favorite_form', event: event %>
+            <% end %>
             <br>
           <% end %>
         </div>
@@ -30,6 +36,9 @@
             <li><%= link_to event.act.name, act_path(event.act)%></li>
             <li><%= event.time_period %></li>
             <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <% if user_signed_in? %>
+              <%= render 'layouts/favorite_form', event: event %>
+            <% end %>
             <br>
           <% end %>
         </div>
@@ -39,6 +48,9 @@
             <li><%= link_to event.act.name, act_path(event.act)%></li>
             <li><%= event.time_period %></li>
             <li><%= link_to event.venue.name, venue_path(event.venue)%></li>
+            <% if user_signed_in? %>
+              <%= render 'layouts/favorite_form', event: event %>
+            <% end %>
             <br>
           <% end %>
         </div>
