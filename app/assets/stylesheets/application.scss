@@ -12,7 +12,7 @@ body, html {
   margin-top: 30px;
   width: 100% !important;
   font-family: 'Josefin Sans', sans-serif;
-  background-image: url("little-pluses.png");
+  background-image: url("https://s3-us-west-2.amazonaws.com/portlandpop-assets/little-pluses.png");
 }
 
 .alert {
@@ -37,7 +37,7 @@ body, html {
 }
 
 .main-jumbotron {
-  background-image: url("jumbotron.jpg");
+  background-image: url("https://s3-us-west-2.amazonaws.com/portlandpop-assets/jumbotron.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
