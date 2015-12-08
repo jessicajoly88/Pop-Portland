@@ -1,26 +1,27 @@
 <nav>
   <ul class="list-unstyled main-menu">
-    <!--Include your navigation here-->
     <li class="text-right"><a href="#" id="nav-close">X</a></li>
     <li><%=link_to "Lineup", acts_path %></li>
     <li><%=link_to "Venues", venues_path %></li></li>
     <li><%=link_to "Schedule", events_path %></li>
       <% if current_user %>
         <li><%= link_to current_user.name, user_path(current_user) %></li>
-        <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+        <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
       <% else %>
         <li><%= link_to 'Login', new_user_session_path%></li>
-        <li><%= link_to 'Signup', new_user_registration_path%></li>
+        <li><%= link_to 'Sign up', new_user_registration_path%></li>
       <% end %>
   </ul>
 </nav>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
-  <%= render 'layouts/notice' %>
   <a class="navbar-brand" href="/">Pop Portland!</a>
+  <%= render 'layouts/notice' %>
     <div class="navbar-header pull-right">
       <a id="nav-expander" class="nav-expander fixed">
         Menu &nbsp;<i class="fa fa-bars fa-lg white"></i>
       </a>
     </div>
 </div>
+
+

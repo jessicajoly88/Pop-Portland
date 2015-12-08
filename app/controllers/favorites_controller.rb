@@ -7,9 +7,9 @@ class FavoritesController < ApplicationController
     @favorite = @user.favorites.new(favorite_params)
     @favorite.user_id = @user.id
     if @favorite.save
-      redirect_to user_path(current_user)
+      redirect_to user_path(current_user), :notice => "You're going to this event!"
     else
-      flash[:alert] = "This event is already part of your schedule!"
+      flash[:alert] = "This event has already been added to your schedule!"
       redirect_to acts_path
     end
   end

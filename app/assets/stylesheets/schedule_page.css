@@ -18,19 +18,19 @@
 }
 
 #schedule-display-3 {
-    clear: left;
-    float: left;
-    width: 100%;
-    position: relative;
-    right: 25%;
+  clear: left;
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 25%;
 }
 
 #schedule-display-2 {
-    clear: left;
-    float: left;
-    width: 100%;
-    position: relative;
-    right: 25%;
+  clear: left;
+  float: left;
+  width: 100%;
+  position: relative;
+  right: 25%;
 }
 
 #schedule-display-1 {
@@ -46,7 +46,7 @@
   width: 21%;
   position: relative;
   left: 77%;
-  border-right: 1px solid #CC33FF;
+  border-right: 1px solid #BD25FF;
 }
 
 #col2 {
@@ -54,7 +54,7 @@
   width: 21%;
   position: relative;
   left: 81%;
-  border-right: 1px solid #CC33FF;
+  border-right: 1px solid #BD25FF;
 }
 
 #col3 {
@@ -62,7 +62,7 @@
   width: 21%;
   position: relative;
   left: 85%;
-  border-right: 1px solid #CC33FF;
+  border-right: 1px solid #BD25FF;
 
 }
 
@@ -73,6 +73,6 @@
   left: 89%;
 }
 
-.event-act-name {
-  color:#CC33FF;
+#act-name {
+  color:#BD25FF;
 }

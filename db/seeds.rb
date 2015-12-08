@@ -39,23 +39,23 @@ venue_list = [
 
   ["Mississippi Studios and Bar Bar","3939 N Mississippi Ave, Portland, OR 97227","A renovated church houses this intimate live music spot with burgers & drinks in the adjoining bar."],
 
-   ["Valentine's","232 SW Ankeny St, Portland, OR 97204","Petite 2-level bar with a bohemian vibe & outdoor seating offering live music, DJs & art shows."],
+  ["Valentine's","232 SW Ankeny St, Portland, OR 97204","Petite 2-level bar with a bohemian vibe & outdoor seating offering live music, DJs & art shows."],
 
-   ["Roseland Theater","8 NW 6th Ave, Portland, OR 97209", "Cozy, mostly standing-room-only concert hall with a storied history & cash-only tickets & drinks."],
+  ["Roseland Theater","8 NW 6th Ave, Portland, OR 97209", "Cozy, mostly standing-room-only concert hall with a storied history & cash-only tickets & drinks."],
 
-   ["Doug Fir Restaurant and Lounge", "830 E Burnside St, Portland, OR 97214","Spot with futuristic log-cabin decor hosting indie music shows, with an eclectic diner menu & bar"],
+  ["Doug Fir Restaurant and Lounge", "830 E Burnside St, Portland, OR 97214","Spot with futuristic log-cabin decor hosting indie music shows, with an eclectic diner menu & bar"],
 
-   ["Aladdin Theater","3017 SE Milwaukie Ave, Portland, OR 97202", "1920s former movie house now presents live music & comedy shows in a cozy auditorium."],
+  ["Aladdin Theater","3017 SE Milwaukie Ave, Portland, OR 97202", "1920s former movie house now presents live music & comedy shows in a cozy auditorium."],
 
-   ["Wonder Ballroom","128 NE Russell St, Portland, OR 97212", "Live-music venue in a historic former church featuring some balcony seats & a lounge with nibbles."],
+  ["Wonder Ballroom","128 NE Russell St, Portland, OR 97212", "Live-music venue in a historic former church featuring some balcony seats & a lounge with nibbles."],
 
-   ["Alberta Rose Theatre","3000 NE Alberta St, Portland, OR 97211","Renovated movie house from the 1920s presents live music, comedy & vaudeville in an intimate space."],
+  ["Alberta Rose Theatre","3000 NE Alberta St, Portland, OR 97211","Renovated movie house from the 1920s presents live music, comedy & vaudeville in an intimate space."],
 
-   ["Goodfoot Pub & Lounge","2845 SE Stark St, Portland, OR 97214","Upstairs pub offers pool, pinball, bar food & beers on tap, while basement hosts live acts & DJs."],
+  ["Goodfoot Pub & Lounge","2845 SE Stark St, Portland, OR 97214","Upstairs pub offers pool, pinball, bar food & beers on tap, while basement hosts live acts & DJs."],
 
-   ["Arlene Schnitzer Concert Hall","1037 SW Broadway, Portland, OR 97205", "Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building."],
+  ["Arlene Schnitzer Concert Hall","1037 SW Broadway, Portland, OR 97205", "Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building."],
 
-   ["Holocene","1001 SE Morrison St, Portland, OR 97214", "2-level nightclub & bar in former auto warehouse featuring live bands, eclectic DJs & techno music."]
+  ["Holocene","1001 SE Morrison St, Portland, OR 97214", "2-level nightclub & bar in former auto warehouse featuring live bands, eclectic DJs & techno music."]
 
 ]
 
@@ -67,7 +67,7 @@ end
 
 event_list = [
 
-  # [0,0,"7pm - 11pm","September 16, 2015"],
+  [4,3,"7pm - 11pm","September 16, 2015"],
 
   [1,9,"9pm - 12am","September 17, 2015"],
 
@@ -76,8 +76,6 @@ event_list = [
   [3,8, "8pm - 11pm","September 17, 2015"],
 
   [4,1, "8pm - 1am","September 18, 2015"],
-
-  [4,10, "8pm - 1am","September 19, 2015"],
 
   [5,7, "7:30pm - 10pm","September 17, 2015"],
 
@@ -93,8 +91,9 @@ event_list = [
 
   [11,10, "9pm - 1am", "September 17, 2015"],
 
-  [12,8, "8pm -10pm", "September 18, 2015"]
+  [12,8, "8pm -10pm", "September 18, 2015"],
 
+  [5,11, "10pm - 3am", "September 19, 2015" ]
 
 ]
 

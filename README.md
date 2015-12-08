@@ -7,7 +7,7 @@
 ## Description
 
 Pop Portland! is a fictional music festival that celebrates both local and international emerging musical acts. The festival app aims to make is to be a one-stop shop of information for festival goers.
-Users can peruse each act's information page which includes a Soundcloud music sample. They can also see all of a band's events and get all of the venue information for said events.
+Users can peruse each act's information page which includes a Soundcloud music sample. They can also see all of a band's events and get all of the venue information(including Google Maps location) for said events.
 When signed-in, users can also tag events as favorites and add them to their profile page.
 
 _Planned future updates_

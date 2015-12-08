@@ -15,9 +15,24 @@ body, html {
   background-image: url("little-pluses.png");
 }
 
-#alert-row {
-  margin-bottom: -1%;
-  text-align: center;
+.alert {
+  padding-top: 0.8%;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success  {
+  color: #BD25FF;
+  font-size: 1.3em;
+  background-color: black;
+  font-weight: bolder;
+}
+
+.alert-danger {
+  color: #BD25FF;
+  font-size: 1.3em;
+  background-color: black;
   font-weight: bolder;
 }
 

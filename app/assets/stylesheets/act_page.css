@@ -28,3 +28,12 @@
    border-radius: 5px;
    margin: 5px;
 }
+
+.user-session {
+  text-align:center;
+  border-style: solid;
+  border-color:#BD25FF;
+  padding-top: 1.2%;
+  width:30%;
+  font-size:1em;
+}

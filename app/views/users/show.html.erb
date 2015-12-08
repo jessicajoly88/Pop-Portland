@@ -1,23 +1,29 @@
 <div class="col-md-10 col-md-offset-1">
+  <br>
   <div class="milliprik"></div>
   <div class="profile-header">
     <%=@user.name %>'s Festival Schedule
   </div>
+  <% if @user.favorites.any? %>
+    <% @user.favorites.each do |favorite|%>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="event-box">
+          <h4><%= favorite.event.date %></h4>
+            <h3><%= link_to favorite.event.act.name, act_path(favorite.event.act) %></h3>
+            <li><%= favorite.event.time_period %></li>
+            <li><%= link_to favorite.event.venue.name, venue_path(favorite.event.venue), :"data-no-turbolink" => true %></li>
+            <br>
+            <li><%= link_to "Delete Event", user_favorite_path(@user,favorite),
+                                    :data => {:confirm =>"You sure?",
+                                    :method => "delete"}, class:"btn btn-default" %></li>
 
-  <% @user.favorites.each do |favorite|%>
-    <div class="col-md-4 col-sm-6 col-xs-12">
-      <div class="event-box">
-        <h4><%= favorite.event.date %></h4>
-          <h3><%= link_to favorite.event.act.name, act_path(favorite.event.act) %></h3>
-          <li><%= favorite.event.time_period %></li>
-          <li><%= link_to favorite.event.venue.name, venue_path(favorite.event.venue), :"data-no-turbolink" => true %></li>
-          <br>
-          <li><%= link_to "Delete Event", user_favorite_path(@user,favorite),
-                                  :data => {:confirm =>"You sure?",
-                                  :method => "delete"}, class:"btn btn-default" %></li>
-
+        </div>
       </div>
-    </div>
+    <% end %>
+  <% else %>
+  <div class="no-events">
+    <p> You have no events added to your schedule! Check out the <%= link_to "lineup", acts_path %>.</p>
+  </div>
   <% end %>
 </div>
 

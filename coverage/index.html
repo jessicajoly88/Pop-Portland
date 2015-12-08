@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-03T00:23:24-08:00">2015-12-03T00:23:24-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-12-07T20:36:21-08:00">2015-12-07T20:36:21-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.75%</span></span>
+    (<span class="covered_percent"><span class="green">97.74%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.64
+         1.57
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>37</b> files in total.
-    <b>311</b> relevant lines. 
-    <span class="green"><b>304</b> lines covered</span> and
+    <b>310</b> relevant lines. 
+    <span class="green"><b>303</b> lines covered</span> and
     <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -83,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#df8b46f5a2a7c465083f3c7544bd60e56cf8d51c" class="src_link" title="app/controllers/home_controller.rb">app/controllers/home_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
-        <td>11.5</td>
+        <td>8.0</td>
       </tr>
       
       <tr>
@@ -313,11 +313,11 @@
       <tr>
         <td class="strong"><a href="#33e6508b6a7baf2a34b6d8002a86b84f60392319" class="src_link" title="db/seeds.rb">db/seeds.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>103</td>
+        <td>102</td>
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>5.4</td>
+        <td>5.5</td>
       </tr>
       
       <tr>
@@ -759,7 +759,7 @@
         <li class="covered" data-hits="3" data-linenumber="10">
           <span class="hits">3</span>
           
-          <code class="ruby">      redirect_to user_path(current_user)</code>
+          <code class="ruby">      redirect_to user_path(current_user), :notice =&gt; &quot;You&#39;re going to this event!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -771,7 +771,7 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      flash[:alert] = &quot;This event is already part of your schedule!&quot;</code>
+          <code class="ruby">      flash[:alert] = &quot;This event has already been added to your schedule!&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
@@ -897,8 +897,8 @@
     <h3>app/controllers/home_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -924,19 +924,13 @@
           <code class="ruby">  	@acts = Act.all</code>
         </li>
       
-        <li class="covered" data-hits="22" data-linenumber="4">
-          <span class="hits">22</span>
-          
-          <code class="ruby">  	@venues = Venue.all</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -4557,7 +4551,7 @@
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">   [&quot;Valentine&#39;s&quot;,&quot;232 SW Ankeny St, Portland, OR 97204&quot;,&quot;Petite 2-level bar with a bohemian vibe &amp; outdoor seating offering live music, DJs &amp; art shows.&quot;],</code>
+          <code class="ruby">  [&quot;Valentine&#39;s&quot;,&quot;232 SW Ankeny St, Portland, OR 97204&quot;,&quot;Petite 2-level bar with a bohemian vibe &amp; outdoor seating offering live music, DJs &amp; art shows.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
@@ -4569,7 +4563,7 @@
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">   [&quot;Roseland Theater&quot;,&quot;8 NW 6th Ave, Portland, OR 97209&quot;, &quot;Cozy, mostly standing-room-only concert hall with a storied history &amp; cash-only tickets &amp; drinks.&quot;],</code>
+          <code class="ruby">  [&quot;Roseland Theater&quot;,&quot;8 NW 6th Ave, Portland, OR 97209&quot;, &quot;Cozy, mostly standing-room-only concert hall with a storied history &amp; cash-only tickets &amp; drinks.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
@@ -4581,7 +4575,7 @@
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">   [&quot;Doug Fir Restaurant and Lounge&quot;, &quot;830 E Burnside St, Portland, OR 97214&quot;,&quot;Spot with futuristic log-cabin decor hosting indie music shows, with an eclectic diner menu &amp; bar&quot;],</code>
+          <code class="ruby">  [&quot;Doug Fir Restaurant and Lounge&quot;, &quot;830 E Burnside St, Portland, OR 97214&quot;,&quot;Spot with futuristic log-cabin decor hosting indie music shows, with an eclectic diner menu &amp; bar&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
@@ -4593,7 +4587,7 @@
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">   [&quot;Aladdin Theater&quot;,&quot;3017 SE Milwaukie Ave, Portland, OR 97202&quot;, &quot;1920s former movie house now presents live music &amp; comedy shows in a cozy auditorium.&quot;],</code>
+          <code class="ruby">  [&quot;Aladdin Theater&quot;,&quot;3017 SE Milwaukie Ave, Portland, OR 97202&quot;, &quot;1920s former movie house now presents live music &amp; comedy shows in a cozy auditorium.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -4605,7 +4599,7 @@
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">   [&quot;Wonder Ballroom&quot;,&quot;128 NE Russell St, Portland, OR 97212&quot;, &quot;Live-music venue in a historic former church featuring some balcony seats &amp; a lounge with nibbles.&quot;],</code>
+          <code class="ruby">  [&quot;Wonder Ballroom&quot;,&quot;128 NE Russell St, Portland, OR 97212&quot;, &quot;Live-music venue in a historic former church featuring some balcony seats &amp; a lounge with nibbles.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
@@ -4617,7 +4611,7 @@
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">   [&quot;Alberta Rose Theatre&quot;,&quot;3000 NE Alberta St, Portland, OR 97211&quot;,&quot;Renovated movie house from the 1920s presents live music, comedy &amp; vaudeville in an intimate space.&quot;],</code>
+          <code class="ruby">  [&quot;Alberta Rose Theatre&quot;,&quot;3000 NE Alberta St, Portland, OR 97211&quot;,&quot;Renovated movie house from the 1920s presents live music, comedy &amp; vaudeville in an intimate space.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
@@ -4629,7 +4623,7 @@
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">   [&quot;Goodfoot Pub &amp; Lounge&quot;,&quot;2845 SE Stark St, Portland, OR 97214&quot;,&quot;Upstairs pub offers pool, pinball, bar food &amp; beers on tap, while basement hosts live acts &amp; DJs.&quot;],</code>
+          <code class="ruby">  [&quot;Goodfoot Pub &amp; Lounge&quot;,&quot;2845 SE Stark St, Portland, OR 97214&quot;,&quot;Upstairs pub offers pool, pinball, bar food &amp; beers on tap, while basement hosts live acts &amp; DJs.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
@@ -4641,7 +4635,7 @@
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">   [&quot;Arlene Schnitzer Concert Hall&quot;,&quot;1037 SW Broadway, Portland, OR 97205&quot;, &quot;Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building.&quot;],</code>
+          <code class="ruby">  [&quot;Arlene Schnitzer Concert Hall&quot;,&quot;1037 SW Broadway, Portland, OR 97205&quot;, &quot;Romantic, high-ceilinged performing-arts venue features diverse shows in an Italian rococo building.&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
@@ -4653,7 +4647,7 @@
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">   [&quot;Holocene&quot;,&quot;1001 SE Morrison St, Portland, OR 97214&quot;, &quot;2-level nightclub &amp; bar in former auto warehouse featuring live bands, eclectic DJs &amp; techno music.&quot;]</code>
+          <code class="ruby">  [&quot;Holocene&quot;,&quot;1001 SE Morrison St, Portland, OR 97214&quot;, &quot;2-level nightclub &amp; bar in former auto warehouse featuring live bands, eclectic DJs &amp; techno music.&quot;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
@@ -4725,7 +4719,7 @@
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">  # [0,0,&quot;7pm - 11pm&quot;,&quot;September 16, 2015&quot;],</code>
+          <code class="ruby">  [4,3,&quot;7pm - 11pm&quot;,&quot;September 16, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
@@ -4785,7 +4779,7 @@
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">  [4,10, &quot;8pm - 1am&quot;,&quot;September 19, 2015&quot;],</code>
+          <code class="ruby">  [5,7, &quot;7:30pm - 10pm&quot;,&quot;September 17, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
@@ -4797,7 +4791,7 @@
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">  [5,7, &quot;7:30pm - 10pm&quot;,&quot;September 17, 2015&quot;],</code>
+          <code class="ruby">  [6,5, &quot;9pm - 2am&quot;,&quot;September 19, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="83">
@@ -4809,7 +4803,7 @@
         <li class="never" data-hits="" data-linenumber="84">
           
           
-          <code class="ruby">  [6,5, &quot;9pm - 2am&quot;,&quot;September 19, 2015&quot;],</code>
+          <code class="ruby">  [7,10, &quot;9pm - 2am&quot;,&quot;September 19, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="85">
@@ -4821,7 +4815,7 @@
         <li class="never" data-hits="" data-linenumber="86">
           
           
-          <code class="ruby">  [7,10, &quot;9pm - 2am&quot;,&quot;September 19, 2015&quot;],</code>
+          <code class="ruby">  [8,2, &quot;8pm - 10pm&quot;, &quot;September 16th, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
@@ -4833,7 +4827,7 @@
         <li class="never" data-hits="" data-linenumber="88">
           
           
-          <code class="ruby">  [8,2, &quot;8pm - 10pm&quot;, &quot;September 16th, 2015&quot;],</code>
+          <code class="ruby">  [9,5, &quot;9pm - 1am&quot;, &quot;September 16, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="89">
@@ -4845,7 +4839,7 @@
         <li class="never" data-hits="" data-linenumber="90">
           
           
-          <code class="ruby">  [9,5, &quot;9pm - 1am&quot;, &quot;September 16, 2015&quot;],</code>
+          <code class="ruby">  [10,1, &quot;8pm - 10pm&quot;, &quot;September 18, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="91">
@@ -4857,7 +4851,7 @@
         <li class="never" data-hits="" data-linenumber="92">
           
           
-          <code class="ruby">  [10,1, &quot;8pm - 10pm&quot;, &quot;September 18, 2015&quot;],</code>
+          <code class="ruby">  [11,10, &quot;9pm - 1am&quot;, &quot;September 17, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="93">
@@ -4869,7 +4863,7 @@
         <li class="never" data-hits="" data-linenumber="94">
           
           
-          <code class="ruby">  [11,10, &quot;9pm - 1am&quot;, &quot;September 17, 2015&quot;],</code>
+          <code class="ruby">  [12,8, &quot;8pm -10pm&quot;, &quot;September 18, 2015&quot;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="95">
@@ -4881,7 +4875,7 @@
         <li class="never" data-hits="" data-linenumber="96">
           
           
-          <code class="ruby">  [12,8, &quot;8pm -10pm&quot;, &quot;September 18, 2015&quot;]</code>
+          <code class="ruby">  [5,11, &quot;10pm - 3am&quot;, &quot;September 19, 2015&quot; ]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="97">
@@ -4893,34 +4887,28 @@
         <li class="never" data-hits="" data-linenumber="98">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="99">
           
           
-          <code class="ruby">]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="100">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="101">
+        <li class="covered" data-hits="1" data-linenumber="100">
           <span class="hits">1</span>
           
           <code class="ruby">event_list.each do |act_id, venue_id, time_period, date|</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="102">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="101">
+          <span class="hits">14</span>
           
           <code class="ruby">  Event.create(act_id: act_id, venue_id: venue_id, date: date,time_period: time_period)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="103">
+        <li class="never" data-hits="" data-linenumber="102">
           
           
           <code class="ruby">end</code>
@@ -5175,7 +5163,7 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">  click_link &#39;Logout&#39;</code>
+          <code class="ruby">  click_link &#39;Log out&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
@@ -5223,7 +5211,7 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to_not have_content &quot;Logout&quot;</code>
+          <code class="ruby">    expect(page).to_not have_content &quot;Log out&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
@@ -5271,7 +5259,7 @@
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(&quot;Logout&quot;)</code>
+          <code class="ruby">    expect(page).to have_content(&quot;Log out&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
@@ -5313,7 +5301,7 @@
         <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to_not have_content &quot;Logout&quot;</code>
+          <code class="ruby">    expect(page).to_not have_content &quot;Log out&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
@@ -5331,7 +5319,7 @@
         <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content(&quot;Logout&quot;)</code>
+          <code class="ruby">    expect(page).to have_content(&quot;Log out&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
@@ -5637,7 +5625,7 @@
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &quot;Delete Event&quot;</code>
+          <code class="ruby">    expect(page).to have_content &quot;You&#39;re going to this event!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
@@ -5781,7 +5769,7 @@
         <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &quot;This event is already part of your schedule!&quot;</code>
+          <code class="ruby">    expect(page).to have_content &quot;This event has already been added to your schedule!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">

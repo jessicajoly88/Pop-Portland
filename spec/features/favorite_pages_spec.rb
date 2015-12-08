@@ -15,7 +15,7 @@ context 'the favorite process' do
     log_in user
     click_link("Ariel Pink", :match => :first)
     click_button('Add to Schedule', :match => :first)
-    expect(page).to have_content "Delete Event"
+    expect(page).to have_content "You're going to this event!"
   end
 
   it 'deletes a user favorite' do
@@ -39,7 +39,7 @@ context 'the favorite process' do
     visit root_url
     click_link("Ariel Pink", :match => :first)
     click_button('Add to Schedule', :match => :first)
-    expect(page).to have_content "This event is already part of your schedule!"
+    expect(page).to have_content "This event has already been added to your schedule!"
   end
 end
 

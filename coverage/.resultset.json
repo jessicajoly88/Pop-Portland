@@ -860,15 +860,13 @@
         null,
         null,
         null,
-        null,
         1,
-        13,
+        14,
         null
       ],
       "/Users/jessica/projects/event_app/app/controllers/home_controller.rb": [
         1,
         1,
-        22,
         22,
         null,
         null
@@ -957,6 +955,6 @@
         null
       ]
     },
-    "timestamp": 1449131004
+    "timestamp": 1449549380
   }
 }

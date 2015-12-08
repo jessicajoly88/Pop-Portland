@@ -24,7 +24,12 @@
         <li><%= event.time_period %></li>
         <li><%= link_to event.venue.name, venue_path(event.venue), :"data-no-turbolink" => true %></li>
         <% if user_signed_in? %>
-          <%= render 'favorite_form', event: event %>
+          <%= render 'layouts/favorite_form', event: event %>
+        <% else %>
+        <div class="user-session">
+          <p><%= link_to "Sign in", new_user_registration_path %> or
+          <%= link_to "Login", new_user_session_path %> to add event to your schedule!</p>
+        <div>
         <% end %>
       </ul>
     <% end %>

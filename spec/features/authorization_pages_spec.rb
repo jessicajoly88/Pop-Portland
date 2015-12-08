@@ -10,7 +10,7 @@ end
 
 def log_out(user)
   visit root_url
-  click_link 'Logout'
+  click_link 'Log out'
   expect(page).to have_content("Login")
 end
 
@@ -18,7 +18,7 @@ describe "authorizations" do
   it "allows a new user to sign up" do
     visit root_url
     expect(page).to have_content "Login"
-    expect(page).to_not have_content "Logout"
+    expect(page).to_not have_content "Log out"
     click_link "Sign up"
     fill_in "Name", with: "Example User"
     fill_in "Email", with: "example_user@example.com"
@@ -26,17 +26,17 @@ describe "authorizations" do
     fill_in "Password confirmation", with: "password"
     click_button "Sign up"
     expect(page).to_not have_content("errors")
-    expect(page).to have_content("Logout")
+    expect(page).to have_content("Log out")
   end
 
   it "allows a user to login" do
     user = FactoryGirl.create(:user)
     visit root_url
     expect(page).to have_content "Login"
-    expect(page).to_not have_content "Logout"
+    expect(page).to_not have_content "Log out"
     log_in user
     expect(page).to_not have_content("errors")
-    expect(page).to have_content("Logout")
+    expect(page).to have_content("Log out")
   end
 
   it "displays an error if user password is wrong" do

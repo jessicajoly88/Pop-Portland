@@ -58,7 +58,7 @@ h2.title {
     }
     &:hover {
       .act-text-display {
-        color:transparent;
+      color:transparent;
       }
       .img-circle {
         opacity: 1.0;
