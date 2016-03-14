@@ -1,7 +1,11 @@
 class FavoritesController < ApplicationController
+before_action:find_id
+
+  def find_id
+    @user = User.find(params[:user_id])
+  end
 
   def create
-    @user = User.find(params[:user_id])
     @favorite = @user.favorites.new(favorite_params)
     @favorite.user_id = @user.id
     if @favorite.save
@@ -13,16 +17,13 @@ class FavoritesController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:user_id])
     @favorite = @user.favorites.find(params[:id])
     @favorite.destroy
     redirect_to user_path(current_user)
   end
 
   private
-
   def favorite_params
     params.require(:favorite).permit(:event_id)
   end
 end
-
